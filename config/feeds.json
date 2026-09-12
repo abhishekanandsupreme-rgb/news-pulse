@@ -1,0 +1,67 @@
+{
+  "version": 2,
+  "_readme": [
+    "NewsPulse feed registry. Consumed by scripts/fetch_feeds.py.",
+    "category: one of the 10 site categories in config/site-config.json:",
+    "world, india, tech, business, sports, gaming, music, movies, science, entertainment.",
+    "strip_source_suffix: true for Google News feeds whose titles end with ' - Publisher'.",
+    "Per-feed overrides: max_items, timeout_seconds, user_agent.",
+    "Global settings: settings.timeout_seconds, settings.max_items_per_feed,",
+    "settings.description_max_chars, settings.retries, settings.user_agent (optional)."
+  ],
+  "settings": {
+    "timeout_seconds": 10,
+    "max_items_per_feed": 25,
+    "description_max_chars": 500,
+    "retries": 1
+  },
+  "feeds": [
+    { "name": "BBC News (World)", "slug": "bbc-world", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "category": "world" },
+    { "name": "Al Jazeera English", "slug": "aljazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "category": "world" },
+    { "name": "The Guardian (World)", "slug": "guardian-world", "url": "https://www.theguardian.com/world/rss", "category": "world" },
+    { "name": "Sky News (World)", "slug": "sky-world", "url": "https://feeds.skynews.com/feeds/rss/world.xml", "category": "world" },
+    { "name": "Deutsche Welle", "slug": "dw", "url": "https://rss.dw.com/rdf/rss-en-all", "category": "world" },
+    { "name": "France 24", "slug": "france24", "url": "https://www.france24.com/en/rss", "category": "world" },
+
+    { "name": "BBC News (India)", "slug": "bbc-india", "url": "https://feeds.bbci.co.uk/news/world/asia/india/rss.xml", "category": "india" },
+    { "name": "Google News (India)", "slug": "google-news-india", "url": "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en", "category": "india", "strip_source_suffix": true },
+    { "name": "The Hindu (National)", "slug": "thehindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "category": "india" },
+    { "name": "The Indian Express", "slug": "indian-express", "url": "https://indianexpress.com/feed/", "category": "india" },
+    { "name": "Times of India", "slug": "toi", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "category": "india" },
+
+    { "name": "The Verge", "slug": "the-verge", "url": "https://www.theverge.com/rss/index.xml", "category": "tech" },
+    { "name": "TechCrunch", "slug": "techcrunch", "url": "https://techcrunch.com/feed/", "category": "tech" },
+    { "name": "Ars Technica", "slug": "ars-technica", "url": "https://feeds.arstechnica.com/arstechnica/index", "category": "tech" },
+    { "name": "Hacker News (Front Page)", "slug": "hackernews", "url": "https://hnrss.org/frontpage", "category": "tech" },
+    { "name": "NDTV Gadgets", "slug": "ndtv-gadgets", "url": "https://gadgets.ndtv.com/rss/feeds", "category": "tech" },
+
+    { "name": "Economic Times (Top Stories)", "slug": "et-top", "url": "https://economictimes.indiatimes.com/rssfeedstopstories.cms", "category": "business" },
+    { "name": "Moneycontrol (Latest News)", "slug": "moneycontrol", "url": "https://www.moneycontrol.com/rss/latestnews.xml", "category": "business" },
+    { "name": "Google News (Business India)", "slug": "google-business-india", "url": "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-IN&gl=IN&ceid=IN:en", "category": "business", "strip_source_suffix": true },
+
+    { "name": "ESPN (Top News)", "slug": "espn", "url": "https://www.espn.com/espn/rss/news", "category": "sports" },
+    { "name": "ESPNcricinfo", "slug": "cricinfo", "url": "https://www.espncricinfo.com/rss/content/story/feeds/0.xml", "category": "sports" },
+    { "name": "Google News (Sports India)", "slug": "google-sports-india", "url": "https://news.google.com/rss/headlines/section/topic/SPORTS?hl=en-IN&gl=IN&ceid=IN:en", "category": "sports", "strip_source_suffix": true },
+
+    { "name": "IGN", "slug": "ign", "url": "https://feeds.ign.com/ign/all", "category": "gaming" },
+    { "name": "Polygon", "slug": "polygon", "url": "https://www.polygon.com/rss/index.xml", "category": "gaming" },
+    { "name": "Google News (Gaming)", "slug": "google-gaming", "url": "https://news.google.com/rss/headlines/section/topic/GAMING?hl=en-IN&gl=IN&ceid=IN:en", "category": "gaming", "strip_source_suffix": true },
+
+    { "name": "Billboard", "slug": "billboard", "url": "https://www.billboard.com/feed/", "category": "music" },
+    { "name": "Rolling Stone (Music)", "slug": "rolling-stone", "url": "https://www.rollingstone.com/music/music-news/feed/", "category": "music" },
+    { "name": "Google News (Music India)", "slug": "google-music-india", "url": "https://news.google.com/rss/headlines/section/topic/MUSIC?hl=en-IN&gl=IN&ceid=IN:en", "category": "music", "strip_source_suffix": true },
+
+    { "name": "Variety", "slug": "variety", "url": "https://variety.com/feed/", "category": "movies" },
+    { "name": "The Hollywood Reporter", "slug": "hollywood-reporter", "url": "https://www.hollywoodreporter.com/feed/", "category": "movies" },
+    { "name": "Deadline", "slug": "deadline", "url": "https://deadline.com/feed/", "category": "movies" },
+    { "name": "Screen Rant", "slug": "screen-rant", "url": "https://screenrant.com/feed/", "category": "movies" },
+
+    { "name": "ScienceDaily (All)", "slug": "sciencedaily", "url": "https://www.sciencedaily.com/rss/all.xml", "category": "science" },
+    { "name": "Phys.org", "slug": "phys-org", "url": "https://phys.org/rss-feed/", "category": "science" },
+
+    { "name": "The A.V. Club", "slug": "av-club", "url": "https://www.avclub.com/rss", "category": "entertainment" },
+    { "name": "Collider", "slug": "collider", "url": "https://collider.com/feed/", "category": "entertainment" },
+    { "name": "The Indian Express (Entertainment)", "slug": "indian-express-ent", "url": "https://indianexpress.com/section/entertainment/feed/", "category": "entertainment" },
+    { "name": "Google News (Entertainment India)", "slug": "google-ent-india", "url": "https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=en-IN&gl=IN&ceid=IN:en", "category": "entertainment", "strip_source_suffix": true }
+  ]
+}

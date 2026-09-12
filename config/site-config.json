@@ -1,0 +1,84 @@
+{
+  "site_name": "NewsPulse",
+  "tagline": "Your daily pulse on news, tech and entertainment",
+  "description": "NewsPulse is an automated news magazine aggregating the latest headlines from world news, India, business, technology, sports, gaming, movies, music, entertainment and science - updated continuously from trusted sources.",
+  "base_url": "https://abhishekanandsupreme-rgb.github.io/news-pulse",
+  "contact_email": "demosupreme001@gmail.com",
+  "language": "en",
+  "data_file": "data/articles.json",
+  "sample_data_file": "data/sample-articles.json",
+  "output_dir": "docs",
+  "articles_per_page": 12,
+  "front_page": {
+    "hero": 1,
+    "secondary": 4,
+    "latest_rows": 12,
+    "per_category": 3,
+    "category_blocks": true
+  },
+  "trending_count": 10,
+  "related_count": 6,
+  "feed_items": 50,
+  "categories": [
+    {
+      "slug": "world",
+      "label": "World",
+      "color": "#1d4ed8"
+    },
+    {
+      "slug": "india",
+      "label": "India",
+      "color": "#ea580c"
+    },
+    {
+      "slug": "entertainment",
+      "label": "Entertainment",
+      "color": "#db2777"
+    },
+    {
+      "slug": "tech",
+      "label": "Tech",
+      "color": "#7c3aed"
+    },
+    {
+      "slug": "business",
+      "label": "Business",
+      "color": "#0e7490"
+    },
+    {
+      "slug": "sports",
+      "label": "Sports",
+      "color": "#15803d"
+    },
+    {
+      "slug": "gaming",
+      "label": "Gaming",
+      "color": "#4338ca"
+    },
+    {
+      "slug": "music",
+      "label": "Music",
+      "color": "#a21caf"
+    },
+    {
+      "slug": "movies",
+      "label": "Movies",
+      "color": "#b45309"
+    },
+    {
+      "slug": "science",
+      "label": "Science",
+      "color": "#0f766e"
+    }
+  ],
+  "ads": {
+    "adsense_client": "",
+    "slots": {
+      "leaderboard": "",
+      "in_article": "",
+      "sidebar": "",
+      "footer": ""
+    },
+    "ads_txt": ""
+  }
+}

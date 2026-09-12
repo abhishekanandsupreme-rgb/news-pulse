@@ -1,0 +1,32 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.python-version
+
+# --- Secrets & environment files (never commit these) ---
+.env
+.env.*
+
+# --- Editors & IDEs ---
+.vscode/
+.idea/
+*.swp
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs & scratch ---
+*.log
+tmp/
+.cache/
+
+# NOTE: data/ and docs/ are deliberately NOT ignored.
+#   data/ — fetched feed snapshots, committed by the automation for history
+#           (this is also what keeps the scheduled workflow alive)
+#   docs/ — generated static site; rebuilt on every run and deployed to Pages
+#           straight from the workflow artifact, so it never needs committing

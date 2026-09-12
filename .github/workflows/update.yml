@@ -1,0 +1,141 @@
+# NewsPulse self-update pipeline — runs forever on free GitHub infrastructure.
+#
+#   fetch feeds -> build site -> verify build -> notify search engines ->
+#   commit data/ to master (built-in GITHUB_TOKEN) -> deploy docs/ to Pages
+#
+# Cost: $0 — the repository is public, so Actions minutes and Pages hosting
+# are free, and the pipeline authenticates with the built-in GITHUB_TOKEN,
+# so there are no secrets to create, store, or rotate.
+
+name: Update NewsPulse
+
+on:
+  # The pulse: auto-update every 2 hours. Minute 7 (not 0) keeps the run out
+  # of GitHub's busiest top-of-hour cron window, so the schedule fires
+  # closer to on time.
+  schedule:
+    - cron: "7 */2 * * *"
+
+  # Rebuild whenever the site's own code changes.
+  # data/** is excluded so the pipeline's auto-commits can't retrigger it
+  # ([skip ci] in the commit message is a second line of defence).
+  push:
+    branches: [master, main]
+    paths-ignore:
+      - "data/**"
+
+  # Manual run from the Actions tab. skip_seo is handy when testing the
+  # build without pinging search engines again.
+  workflow_dispatch:
+    inputs:
+      skip_seo:
+        description: "Skip the search-engine submission step"
+        type: boolean
+        default: false
+
+# contents: write  -> push the refreshed data/ commit with GITHUB_TOKEN
+# pages + id-token  -> deploy the static site to GitHub Pages (OIDC)
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Never run two pipelines at once; a queued run waits for the current one
+# instead of cancelling it mid-deploy.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  update:
+    name: Fetch, build, SEO, commit, deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # 1. Latest news from all configured feeds into data/.
+      - name: Fetch news feeds
+        run: python scripts/fetch_feeds.py
+
+      # 2. Regenerate the static site into docs/.
+      - name: Build static site
+        run: python scripts/build_site.py
+
+      # 3. Guard: refuse to deploy an empty or broken build.
+      - name: Verify build output
+        run: python scripts/docs-check.py
+
+      # 4. Tell search engines about the fresh content.
+      #    SEO must never block a deploy — failures here are non-fatal.
+      #    submit_seo.py is subcommand-based; the builder emits sitemap.xml,
+      #    so we extract URLs and submit them via IndexNow.
+      - name: Submit URLs to search engines (IndexNow)
+        if: inputs.skip_seo != true
+        continue-on-error: true
+        run: |
+          python scripts/submit_seo.py submit \
+            --url "https://abhishekanandsupreme-rgb.github.io/news-pulse/" \
+            --key-location "https://abhishekanandsupreme-rgb.github.io/news-pulse/2f2b4da5a93242c38df8ee1bbcb4bceb.txt"
+
+      # 5. Persist refreshed data/ on master using the built-in token.
+      #    The heartbeat file also keeps the repository "active" so GitHub
+      #    never auto-disables the schedule after 60 idle days (see README).
+      - name: Commit refreshed data to master
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Heartbeat: refresh only when the last one is >30 days old, so a
+          # commit lands well inside GitHub's 60-day activity window even
+          # if every feed goes quiet.
+          now=$(date -u +%s)
+          hb="data/.heartbeat"
+          last=0
+          [ -f "$hb" ] && last=$(cat "$hb")
+          case "$last" in ( *[!0-9]* | "" ) last=0 ;; esac
+          if [ $(( now - last )) -ge 2592000 ]; then
+            mkdir -p data
+            printf '%s\n' "$now" > "$hb"
+          fi
+
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No changes in data/ — nothing to commit."
+          else
+            git commit -m "chore(data): auto-refresh $(date -u '+%Y-%m-%d %H:%M') UTC [skip ci]"
+            # If someone pushed while we were building, rebase once, retry.
+            if ! git push; then
+              echo "Push rejected — rebasing on latest $GITHUB_REF_NAME and retrying."
+              git fetch origin "$GITHUB_REF_NAME"
+              git rebase "origin/$GITHUB_REF_NAME"
+              git push
+            fi
+          fi
+
+      # 6. Ship docs/ to GitHub Pages from this run's artifact (not from git).
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Job summary
+        if: always()
+        run: |
+          echo "### NewsPulse update — $(date -u '+%Y-%m-%d %H:%M') UTC" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- Site: ${{ steps.deployment.outputs.page_url || 'not deployed this run' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- SEO submission is non-blocking by design (continue-on-error)." >> $GITHUB_STEP_SUMMARY

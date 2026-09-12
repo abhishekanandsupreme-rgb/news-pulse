@@ -1,0 +1,547 @@
+{
+  "version": 1,
+  "last_run": "2026-09-12T21:40:50.724515+00:00",
+  "duration_seconds": 31.96,
+  "config": {
+    "config_file": "C:\\Users\\asus\\news-pulse\\config\\feeds.json",
+    "timeout_seconds": 10,
+    "max_items_per_feed": 25,
+    "description_max_chars": 500,
+    "retries": 1,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36 NewsPulseBot/1.0 (zero-dependency RSS aggregator)"
+  },
+  "totals": {
+    "feeds": 38,
+    "feeds_ok": 34,
+    "feeds_failed": 4,
+    "articles": 680
+  },
+  "categories": {
+    "movies": 42,
+    "gaming": 30,
+    "india": 125,
+    "entertainment": 85,
+    "tech": 70,
+    "world": 133,
+    "music": 45,
+    "science": 50,
+    "sports": 50,
+    "business": 50
+  },
+  "sources": [
+    {
+      "slug": "bbc-world",
+      "name": "BBC News (World)",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "category": "world",
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
+    },
+    {
+      "slug": "aljazeera",
+      "name": "Al Jazeera English",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "category": "world",
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
+    },
+    {
+      "slug": "guardian-world",
+      "name": "The Guardian (World)",
+      "url": "https://www.theguardian.com/world/rss",
+      "category": "world",
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
+    },
+    {
+      "slug": "sky-world",
+      "name": "Sky News (World)",
+      "url": "https://feeds.skynews.com/feeds/rss/world.xml",
+      "category": "world",
+      "ok": true,
+      "http_status": 200,
+      "articles": 10,
+      "error": null
+    },
+    {
+      "slug": "dw",
+      "name": "Deutsche Welle",
+      "url": "https://rss.dw.com/rdf/rss-en-all",
+      "category": "world",
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
+    },
+    {
+      "slug": "france24",
+      "name": "France 24",
+      "url": "https://www.france24.com/en/rss",
+      "category": "world",
+      "ok": true,
+      "http_status": 200,
+      "articles": 23,
+      "error": null
+    },
+    {
+      "slug": "bbc-india",
+      "name": "BBC News (India)",
+      "url": "https://feeds.bbci.co.uk/news/world/asia/india/rss.xml",
+      "category": "india",
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
+    },
+    {
+      "slug": "google-news-india",
+      "name": "Google News (India)",
+      "url": "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en",
+      "category": "india",
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
+    },
+    {
+      "slug": "thehindu",
+      "name": "The Hindu (National)",
+      "url": "https://www.thehindu.com/news/national/feeder/default.rss",
+      "category": "india",
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
+    },
+    {
+      "slug": "indian-express",
+      "name": "The Indian Express",
+      "url": "https://indianexpress.com/feed/",
+      "category": "india",
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
+    },
+    {
+      "slug": "toi",
+      "name": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
+      "category": "india",
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
+    },
+    {
+      "slug": "the-verge",
+      "name": "The Verge",
+      "url": "https://www.theverge.com/rss/index.xml",
+      "category": "tech",
+      "ok": true,
+      "http_status": 200,
+      "articles": 10,
+      "error": null
+    },
+    {
+      "slug": "techcrunch",
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/feed/",
+      "category": "tech",
+      "ok": true,
+      "http_status": 200,
+      "articles": 20,
+      "error": null
+    },
+    {
+      "slug": "ars-technica",
+      "name": "Ars Technica",
+      "url": "https://feeds.arstechnica.com/arstechnica/index",
+      "category": "tech",
+      "ok": true,
+      "http_status": 200,
+      "articles": 20,
+      "error": null
+    },
+    {
+      "slug": "hackernews",
+      "name": "Hacker News (Front Page)",
+      "url": "https://hnrss.org/frontpage",
+      "category": "tech",
+      "ok": true,
+      "http_status": 200,
+      "articles": 20,
+      "error": null
+    },
+    {
+      "slug": "ndtv-gadgets",
+      "name": "NDTV Gadgets",
+      "url": "https://gadgets.ndtv.com/rss/feeds",
+      "category": "tech",
+      "ok": false,
+      "http_status": 403,
+      "articles": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "slug": "et-top",
+      "name": "Economic Times (Top Stories)",
+      "url": "https://economictimes.indiatimes.com/rssfeedstopstories.cms",
+      "category": "business",
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
+    },
+    {
+      "slug": "moneycontrol",
+      "name": "Moneycontrol (Latest News)",
+      "url": "https://www.moneycontrol.com/rss/latestnews.xml",
+      "category": "business",
+      "ok": false,
+      "http_status": 403,
+      "articles": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "slug": "google-business-india",
+      "name": "Google News (Business India)",
+      "url": "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-IN&gl=IN&ceid=IN:en",
+      "category": "business",
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
+    },
+    {
+      "slug": "espn",
+      "name": "ESPN (Top News)",
+      "url": "https://www.espn.com/espn/rss/news",
+      "category": "sports",
+      "ok": false,
+      "http_status": 202,
+      "articles": 0,
+      "error": "ValueError: feed is not well-formed XML even after cleanup: no element found: line 1, column 0"
+    },
+    {
+      "slug": "cricinfo",
+      "name": "ESPNcricinfo",
+      "url": "https://www.espncricinfo.com/rss/content/story/feeds/0.xml",
+      "category": "sports",
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
+    },
+    {
+      "slug": "google-sports-india",
+      "name": "Google News (Sports India)",
+      "url": "https://news.google.com/rss/headlines/section/topic/SPORTS?hl=en-IN&gl=IN&ceid=IN:en",
+      "category": "sports",
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
+    },
+    {
+      "slug": "ign",
+      "name": "IGN",
+      "url": "https://feeds.ign.com/ign/all",
+      "category": "gaming",
+      "ok": true,
+      "http_status": 200,
+      "articles": 20,
+      "error": null
+    },
+    {
+      "slug": "polygon",
+      "name": "Polygon",
+      "url": "https://www.polygon.com/rss/index.xml",
+      "category": "gaming",
+      "ok": true,
+      "http_status": 200,
+      "articles": 10,
+      "error": null
+    },
+    {
+      "slug": "google-gaming",
+      "name": "Google News (Gaming)",
+      "url": "https://news.google.com/rss/headlines/section/topic/GAMING?hl=en-IN&gl=IN&ceid=IN:en",
+      "category": "gaming",
+      "ok": false,
+      "http_status": 200,
+      "articles": 0,
+      "error": "ValueError: feed is not well-formed XML even after cleanup: syntax error: line 1, column 0"
+    },
+    {
+      "slug": "billboard",
+      "name": "Billboard",
+      "url": "https://www.billboard.com/feed/",
+      "category": "music",
+      "ok": true,
+      "http_status": 200,
+      "articles": 10,
+      "error": null
+    },
+    {
+      "slug": "rolling-stone",
+      "name": "Rolling Stone (Music)",
+      "url": "https://www.rollingstone.com/music/music-news/feed/",
+      "category": "music",
+      "ok": true,
+      "http_status": 200,
+      "articles": 10,
+      "error": null
+    },
+    {
+      "slug": "google-music-india",
+      "name": "Google News (Music India)",
+      "url": "https://news.google.com/rss/headlines/section/topic/MUSIC?hl=en-IN&gl=IN&ceid=IN:en",
+      "category": "music",
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
+    },
+    {
+      "slug": "variety",
+      "name": "Variety",
+      "url": "https://variety.com/feed/",
+      "category": "movies",
+      "ok": true,
+      "http_status": 200,
+      "articles": 10,
+      "error": null
+    },
+    {
+      "slug": "hollywood-reporter",
+      "name": "The Hollywood Reporter",
+      "url": "https://www.hollywoodreporter.com/feed/",
+      "category": "movies",
+      "ok": true,
+      "http_status": 200,
+      "articles": 10,
+      "error": null
+    },
+    {
+      "slug": "deadline",
+      "name": "Deadline",
+      "url": "https://deadline.com/feed/",
+      "category": "movies",
+      "ok": true,
+      "http_status": 200,
+      "articles": 12,
+      "error": null
+    },
+    {
+      "slug": "screen-rant",
+      "name": "Screen Rant",
+      "url": "https://screenrant.com/feed/",
+      "category": "movies",
+      "ok": true,
+      "http_status": 200,
+      "articles": 10,
+      "error": null
+    },
+    {
+      "slug": "sciencedaily",
+      "name": "ScienceDaily (All)",
+      "url": "https://www.sciencedaily.com/rss/all.xml",
+      "category": "science",
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
+    },
+    {
+      "slug": "phys-org",
+      "name": "Phys.org",
+      "url": "https://phys.org/rss-feed/",
+      "category": "science",
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
+    },
+    {
+      "slug": "av-club",
+      "name": "The A.V. Club",
+      "url": "https://www.avclub.com/rss",
+      "category": "entertainment",
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
+    },
+    {
+      "slug": "collider",
+      "name": "Collider",
+      "url": "https://collider.com/feed/",
+      "category": "entertainment",
+      "ok": true,
+      "http_status": 200,
+      "articles": 10,
+      "error": null
+    },
+    {
+      "slug": "indian-express-ent",
+      "name": "The Indian Express (Entertainment)",
+      "url": "https://indianexpress.com/section/entertainment/feed/",
+      "category": "entertainment",
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
+    },
+    {
+      "slug": "google-ent-india",
+      "name": "Google News (Entertainment India)",
+      "url": "https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=en-IN&gl=IN&ceid=IN:en",
+      "category": "entertainment",
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
+    }
+  ],
+  "failures": [
+    {
+      "slug": "ndtv-gadgets",
+      "name": "NDTV Gadgets",
+      "url": "https://gadgets.ndtv.com/rss/feeds",
+      "category": "tech",
+      "ok": false,
+      "http_status": 403,
+      "articles": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "slug": "moneycontrol",
+      "name": "Moneycontrol (Latest News)",
+      "url": "https://www.moneycontrol.com/rss/latestnews.xml",
+      "category": "business",
+      "ok": false,
+      "http_status": 403,
+      "articles": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "slug": "espn",
+      "name": "ESPN (Top News)",
+      "url": "https://www.espn.com/espn/rss/news",
+      "category": "sports",
+      "ok": false,
+      "http_status": 202,
+      "articles": 0,
+      "error": "ValueError: feed is not well-formed XML even after cleanup: no element found: line 1, column 0"
+    },
+    {
+      "slug": "google-gaming",
+      "name": "Google News (Gaming)",
+      "url": "https://news.google.com/rss/headlines/section/topic/GAMING?hl=en-IN&gl=IN&ceid=IN:en",
+      "category": "gaming",
+      "ok": false,
+      "http_status": 200,
+      "articles": 0,
+      "error": "ValueError: feed is not well-formed XML even after cleanup: syntax error: line 1, column 0"
+    }
+  ],
+  "trending_keywords": [
+    {
+      "word": "india",
+      "count": 51
+    },
+    {
+      "word": "brics",
+      "count": 36
+    },
+    {
+      "word": "final",
+      "count": 24
+    },
+    {
+      "word": "film",
+      "count": 23
+    },
+    {
+      "word": "trump",
+      "count": 19
+    },
+    {
+      "word": "years",
+      "count": 16
+    },
+    {
+      "word": "open",
+      "count": 15
+    },
+    {
+      "word": "world",
+      "count": 15
+    },
+    {
+      "word": "calls",
+      "count": 14
+    },
+    {
+      "word": "office",
+      "count": 14
+    },
+    {
+      "word": "attack",
+      "count": 12
+    },
+    {
+      "word": "back",
+      "count": 12
+    },
+    {
+      "word": "found",
+      "count": 12
+    },
+    {
+      "word": "iran",
+      "count": 12
+    },
+    {
+      "word": "ireland",
+      "count": 11
+    }
+  ],
+  "history": [
+    {
+      "last_run": "2026-09-12T10:47:52.711769+00:00",
+      "duration_seconds": 18.1,
+      "feeds_ok": 23,
+      "feeds_failed": 1,
+      "articles": 417
+    },
+    {
+      "last_run": "2026-09-12T10:50:58.334535+00:00",
+      "duration_seconds": 24.32,
+      "feeds_ok": 24,
+      "feeds_failed": 0,
+      "articles": 442
+    },
+    {
+      "last_run": "2026-09-12T10:53:27.421331+00:00",
+      "duration_seconds": 13.22,
+      "feeds_ok": 24,
+      "feeds_failed": 0,
+      "articles": 442
+    },
+    {
+      "last_run": "2026-09-12T21:40:50.724515+00:00",
+      "duration_seconds": 31.96,
+      "feeds_ok": 34,
+      "feeds_failed": 4,
+      "articles": 680
+    }
+  ]
+}
