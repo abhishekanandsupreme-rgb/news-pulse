@@ -124,7 +124,7 @@ jobs:
 
       # 6. Ship docs/ to GitHub Pages from this run's artifact (not from git).
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: docs/
 
