@@ -1,32 +1,32 @@
 {
   "version": 1,
-  "last_run": "2026-09-12T21:40:50.724515+00:00",
-  "duration_seconds": 31.96,
+  "last_run": "2026-10-08T09:12:47.476280+00:00",
+  "duration_seconds": 10.29,
   "config": {
-    "config_file": "C:\\Users\\asus\\news-pulse\\config\\feeds.json",
+    "config_file": "/app/config/feeds.json",
     "timeout_seconds": 10,
     "max_items_per_feed": 25,
     "description_max_chars": 500,
     "retries": 1,
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36 NewsPulseBot/1.0 (zero-dependency RSS aggregator)"
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
   },
   "totals": {
     "feeds": 38,
-    "feeds_ok": 34,
-    "feeds_failed": 4,
-    "articles": 680
+    "feeds_ok": 38,
+    "feeds_failed": 0,
+    "articles": 759
   },
   "categories": {
+    "india": 118,
+    "sports": 75,
     "movies": 42,
-    "gaming": 30,
-    "india": 125,
-    "entertainment": 85,
-    "tech": 70,
-    "world": 133,
-    "music": 45,
+    "business": 64,
     "science": 50,
-    "sports": 50,
-    "business": 50
+    "entertainment": 85,
+    "world": 130,
+    "gaming": 55,
+    "tech": 95,
+    "music": 45
   },
   "sources": [
     {
@@ -36,7 +36,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 10,
+      "articles": 7,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 24,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 18,
       "error": null
     },
     {
@@ -120,9 +120,9 @@
       "error": null
     },
     {
-      "slug": "indian-express",
-      "name": "The Indian Express",
-      "url": "https://indianexpress.com/feed/",
+      "slug": "google-india-search",
+      "name": "Google News (India Search)",
+      "url": "https://news.google.com/rss/search?q=India+news&hl=en-IN&gl=IN&ceid=IN:en",
       "category": "india",
       "ok": true,
       "http_status": 200,
@@ -182,12 +182,12 @@
     {
       "slug": "ndtv-gadgets",
       "name": "NDTV Gadgets",
-      "url": "https://gadgets.ndtv.com/rss/feeds",
+      "url": "https://feeds.feedburner.com/ndtvgadgets-latest",
       "category": "tech",
-      "ok": false,
-      "http_status": 403,
-      "articles": 0,
-      "error": "HTTP 403"
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
     },
     {
       "slug": "et-top",
@@ -204,10 +204,10 @@
       "name": "Moneycontrol (Latest News)",
       "url": "https://www.moneycontrol.com/rss/latestnews.xml",
       "category": "business",
-      "ok": false,
-      "http_status": 403,
-      "articles": 0,
-      "error": "HTTP 403"
+      "ok": true,
+      "http_status": 200,
+      "articles": 14,
+      "error": null
     },
     {
       "slug": "google-business-india",
@@ -220,14 +220,14 @@
       "error": null
     },
     {
-      "slug": "espn",
-      "name": "ESPN (Top News)",
-      "url": "https://www.espn.com/espn/rss/news",
+      "slug": "bbc-sport",
+      "name": "BBC Sport",
+      "url": "https://feeds.bbci.co.uk/sport/rss.xml",
       "category": "sports",
-      "ok": false,
-      "http_status": 202,
-      "articles": 0,
-      "error": "ValueError: feed is not well-formed XML even after cleanup: no element found: line 1, column 0"
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
     },
     {
       "slug": "cricinfo",
@@ -272,12 +272,12 @@
     {
       "slug": "google-gaming",
       "name": "Google News (Gaming)",
-      "url": "https://news.google.com/rss/headlines/section/topic/GAMING?hl=en-IN&gl=IN&ceid=IN:en",
+      "url": "https://news.google.com/rss/search?q=gaming&hl=en-IN&gl=IN&ceid=IN:en",
       "category": "gaming",
-      "ok": false,
+      "ok": true,
       "http_status": 200,
-      "articles": 0,
-      "error": "ValueError: feed is not well-formed XML even after cleanup: syntax error: line 1, column 0"
+      "articles": 25,
+      "error": null
     },
     {
       "slug": "billboard",
@@ -390,9 +390,9 @@
       "error": null
     },
     {
-      "slug": "indian-express-ent",
-      "name": "The Indian Express (Entertainment)",
-      "url": "https://indianexpress.com/section/entertainment/feed/",
+      "slug": "google-bollywood",
+      "name": "Google News (Bollywood)",
+      "url": "https://news.google.com/rss/search?q=Bollywood&hl=en-IN&gl=IN&ceid=IN:en",
       "category": "entertainment",
       "ok": true,
       "http_status": 200,
@@ -410,108 +410,67 @@
       "error": null
     }
   ],
-  "failures": [
-    {
-      "slug": "ndtv-gadgets",
-      "name": "NDTV Gadgets",
-      "url": "https://gadgets.ndtv.com/rss/feeds",
-      "category": "tech",
-      "ok": false,
-      "http_status": 403,
-      "articles": 0,
-      "error": "HTTP 403"
-    },
-    {
-      "slug": "moneycontrol",
-      "name": "Moneycontrol (Latest News)",
-      "url": "https://www.moneycontrol.com/rss/latestnews.xml",
-      "category": "business",
-      "ok": false,
-      "http_status": 403,
-      "articles": 0,
-      "error": "HTTP 403"
-    },
-    {
-      "slug": "espn",
-      "name": "ESPN (Top News)",
-      "url": "https://www.espn.com/espn/rss/news",
-      "category": "sports",
-      "ok": false,
-      "http_status": 202,
-      "articles": 0,
-      "error": "ValueError: feed is not well-formed XML even after cleanup: no element found: line 1, column 0"
-    },
-    {
-      "slug": "google-gaming",
-      "name": "Google News (Gaming)",
-      "url": "https://news.google.com/rss/headlines/section/topic/GAMING?hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "gaming",
-      "ok": false,
-      "http_status": 200,
-      "articles": 0,
-      "error": "ValueError: feed is not well-formed XML even after cleanup: syntax error: line 1, column 0"
-    }
-  ],
+  "failures": [],
   "trending_keywords": [
     {
       "word": "india",
-      "count": 51
+      "count": 68
     },
     {
-      "word": "brics",
-      "count": 36
+      "word": "nana",
+      "count": 31
     },
     {
-      "word": "final",
-      "count": 24
+      "word": "patekar",
+      "count": 30
     },
     {
-      "word": "film",
-      "count": 23
+      "word": "bollywood",
+      "count": 28
     },
     {
-      "word": "trump",
+      "word": "indian",
+      "count": 25
+    },
+    {
+      "word": "october",
+      "count": 21
+    },
+    {
+      "word": "protests",
       "count": 19
     },
     {
-      "word": "years",
-      "count": 16
+      "word": "gaming",
+      "count": 18
     },
     {
-      "word": "open",
+      "word": "actor",
+      "count": 17
+    },
+    {
+      "word": "google",
+      "count": 17
+    },
+    {
+      "word": "dies",
       "count": 15
     },
     {
-      "word": "world",
+      "word": "festival",
       "count": 15
     },
     {
-      "word": "calls",
-      "count": 14
+      "word": "film",
+      "count": 15
     },
     {
-      "word": "office",
-      "count": 14
+      "word": "star",
+      "count": 15
     },
     {
-      "word": "attack",
-      "count": 12
-    },
-    {
-      "word": "back",
-      "count": 12
-    },
-    {
-      "word": "found",
-      "count": 12
-    },
-    {
-      "word": "iran",
-      "count": 12
-    },
-    {
-      "word": "ireland",
-      "count": 11
+      "word": "target",
+      "count": 15
     }
   ],
   "history": [
@@ -542,6 +501,41 @@
       "feeds_ok": 34,
       "feeds_failed": 4,
       "articles": 680
+    },
+    {
+      "last_run": "2026-10-08T09:06:13.692036+00:00",
+      "duration_seconds": 37.73,
+      "feeds_ok": 32,
+      "feeds_failed": 6,
+      "articles": 620
+    },
+    {
+      "last_run": "2026-10-08T09:09:59.317388+00:00",
+      "duration_seconds": 19.45,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 634
+    },
+    {
+      "last_run": "2026-10-08T09:11:08.470275+00:00",
+      "duration_seconds": 19.06,
+      "feeds_ok": 36,
+      "feeds_failed": 2,
+      "articles": 709
+    },
+    {
+      "last_run": "2026-10-08T09:11:35.972822+00:00",
+      "duration_seconds": 6.99,
+      "feeds_ok": 38,
+      "feeds_failed": 0,
+      "articles": 759
+    },
+    {
+      "last_run": "2026-10-08T09:12:47.476280+00:00",
+      "duration_seconds": 10.29,
+      "feeds_ok": 38,
+      "feeds_failed": 0,
+      "articles": 759
     }
   ]
 }

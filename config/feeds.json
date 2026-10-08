@@ -26,26 +26,26 @@
     { "name": "BBC News (India)", "slug": "bbc-india", "url": "https://feeds.bbci.co.uk/news/world/asia/india/rss.xml", "category": "india" },
     { "name": "Google News (India)", "slug": "google-news-india", "url": "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en", "category": "india", "strip_source_suffix": true },
     { "name": "The Hindu (National)", "slug": "thehindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "category": "india" },
-    { "name": "The Indian Express", "slug": "indian-express", "url": "https://indianexpress.com/feed/", "category": "india" },
+    { "name": "Google News (India Search)", "slug": "google-india-search", "url": "https://news.google.com/rss/search?q=India+news&hl=en-IN&gl=IN&ceid=IN:en", "category": "india", "strip_source_suffix": true },
     { "name": "Times of India", "slug": "toi", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "category": "india" },
 
     { "name": "The Verge", "slug": "the-verge", "url": "https://www.theverge.com/rss/index.xml", "category": "tech" },
     { "name": "TechCrunch", "slug": "techcrunch", "url": "https://techcrunch.com/feed/", "category": "tech" },
     { "name": "Ars Technica", "slug": "ars-technica", "url": "https://feeds.arstechnica.com/arstechnica/index", "category": "tech" },
     { "name": "Hacker News (Front Page)", "slug": "hackernews", "url": "https://hnrss.org/frontpage", "category": "tech" },
-    { "name": "NDTV Gadgets", "slug": "ndtv-gadgets", "url": "https://gadgets.ndtv.com/rss/feeds", "category": "tech" },
+    { "name": "NDTV Gadgets", "slug": "ndtv-gadgets", "url": "https://feeds.feedburner.com/ndtvgadgets-latest", "category": "tech" },
 
     { "name": "Economic Times (Top Stories)", "slug": "et-top", "url": "https://economictimes.indiatimes.com/rssfeedstopstories.cms", "category": "business" },
     { "name": "Moneycontrol (Latest News)", "slug": "moneycontrol", "url": "https://www.moneycontrol.com/rss/latestnews.xml", "category": "business" },
     { "name": "Google News (Business India)", "slug": "google-business-india", "url": "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-IN&gl=IN&ceid=IN:en", "category": "business", "strip_source_suffix": true },
 
-    { "name": "ESPN (Top News)", "slug": "espn", "url": "https://www.espn.com/espn/rss/news", "category": "sports" },
+    { "name": "BBC Sport", "slug": "bbc-sport", "url": "https://feeds.bbci.co.uk/sport/rss.xml", "category": "sports" },
     { "name": "ESPNcricinfo", "slug": "cricinfo", "url": "https://www.espncricinfo.com/rss/content/story/feeds/0.xml", "category": "sports" },
     { "name": "Google News (Sports India)", "slug": "google-sports-india", "url": "https://news.google.com/rss/headlines/section/topic/SPORTS?hl=en-IN&gl=IN&ceid=IN:en", "category": "sports", "strip_source_suffix": true },
 
     { "name": "IGN", "slug": "ign", "url": "https://feeds.ign.com/ign/all", "category": "gaming" },
     { "name": "Polygon", "slug": "polygon", "url": "https://www.polygon.com/rss/index.xml", "category": "gaming" },
-    { "name": "Google News (Gaming)", "slug": "google-gaming", "url": "https://news.google.com/rss/headlines/section/topic/GAMING?hl=en-IN&gl=IN&ceid=IN:en", "category": "gaming", "strip_source_suffix": true },
+    { "name": "Google News (Gaming)", "slug": "google-gaming", "url": "https://news.google.com/rss/search?q=gaming&hl=en-IN&gl=IN&ceid=IN:en", "category": "gaming", "strip_source_suffix": true },
 
     { "name": "Billboard", "slug": "billboard", "url": "https://www.billboard.com/feed/", "category": "music" },
     { "name": "Rolling Stone (Music)", "slug": "rolling-stone", "url": "https://www.rollingstone.com/music/music-news/feed/", "category": "music" },
@@ -61,7 +61,7 @@
 
     { "name": "The A.V. Club", "slug": "av-club", "url": "https://www.avclub.com/rss", "category": "entertainment" },
     { "name": "Collider", "slug": "collider", "url": "https://collider.com/feed/", "category": "entertainment" },
-    { "name": "The Indian Express (Entertainment)", "slug": "indian-express-ent", "url": "https://indianexpress.com/section/entertainment/feed/", "category": "entertainment" },
+    { "name": "Google News (Bollywood)", "slug": "google-bollywood", "url": "https://news.google.com/rss/search?q=Bollywood&hl=en-IN&gl=IN&ceid=IN:en", "category": "entertainment", "strip_source_suffix": true },
     { "name": "Google News (Entertainment India)", "slug": "google-ent-india", "url": "https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=en-IN&gl=IN&ceid=IN:en", "category": "entertainment", "strip_source_suffix": true }
   ]
 }
