@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-09-12T21:40:50.724515+00:00",
-  "duration_seconds": 31.96,
+  "last_run": "2026-10-13T09:33:01.856917+00:00",
+  "duration_seconds": 16.55,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -12,21 +12,21 @@
   },
   "totals": {
     "feeds": 38,
-    "feeds_ok": 34,
-    "feeds_failed": 4,
-    "articles": 680
+    "feeds_ok": 33,
+    "feeds_failed": 5,
+    "articles": 637
   },
   "categories": {
+    "entertainment": 60,
+    "gaming": 55,
+    "india": 94,
     "movies": 42,
-    "gaming": 30,
-    "india": 125,
-    "entertainment": 85,
+    "world": 129,
+    "business": 49,
     "tech": 70,
-    "world": 133,
-    "music": 45,
-    "science": 50,
-    "sports": 50,
-    "business": 50
+    "sports": 44,
+    "music": 44,
+    "science": 50
   },
   "sources": [
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 10,
+      "articles": 7,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 22,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 21,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 23,
       "error": null
     },
     {
@@ -124,10 +124,10 @@
       "name": "The Indian Express",
       "url": "https://indianexpress.com/feed/",
       "category": "india",
-      "ok": true,
-      "http_status": 200,
-      "articles": 25,
-      "error": null
+      "ok": false,
+      "http_status": 403,
+      "articles": 0,
+      "error": "HTTP 403"
     },
     {
       "slug": "toi",
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -227,7 +227,7 @@
       "ok": false,
       "http_status": 202,
       "articles": 0,
-      "error": "ValueError: feed is not well-formed XML even after cleanup: no element found: line 1, column 0"
+      "error": "ValueError: response body is empty -- upstream sent no feed (bot mitigation returns a 2xx with zero bytes)"
     },
     {
       "slug": "cricinfo",
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 19,
       "error": null
     },
     {
@@ -272,12 +272,12 @@
     {
       "slug": "google-gaming",
       "name": "Google News (Gaming)",
-      "url": "https://news.google.com/rss/headlines/section/topic/GAMING?hl=en-IN&gl=IN&ceid=IN:en",
+      "url": "https://news.google.com/rss/search?q=gaming%20news&hl=en-IN&gl=IN&ceid=IN:en",
       "category": "gaming",
-      "ok": false,
+      "ok": true,
       "http_status": 200,
-      "articles": 0,
-      "error": "ValueError: feed is not well-formed XML even after cleanup: syntax error: line 1, column 0"
+      "articles": 25,
+      "error": null
     },
     {
       "slug": "billboard",
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -394,10 +394,10 @@
       "name": "The Indian Express (Entertainment)",
       "url": "https://indianexpress.com/section/entertainment/feed/",
       "category": "entertainment",
-      "ok": true,
-      "http_status": 200,
-      "articles": 25,
-      "error": null
+      "ok": false,
+      "http_status": 403,
+      "articles": 0,
+      "error": "HTTP 403"
     },
     {
       "slug": "google-ent-india",
@@ -411,6 +411,16 @@
     }
   ],
   "failures": [
+    {
+      "slug": "indian-express",
+      "name": "The Indian Express",
+      "url": "https://indianexpress.com/feed/",
+      "category": "india",
+      "ok": false,
+      "http_status": 403,
+      "articles": 0,
+      "error": "HTTP 403"
+    },
     {
       "slug": "ndtv-gadgets",
       "name": "NDTV Gadgets",
@@ -439,79 +449,79 @@
       "ok": false,
       "http_status": 202,
       "articles": 0,
-      "error": "ValueError: feed is not well-formed XML even after cleanup: no element found: line 1, column 0"
+      "error": "ValueError: response body is empty -- upstream sent no feed (bot mitigation returns a 2xx with zero bytes)"
     },
     {
-      "slug": "google-gaming",
-      "name": "Google News (Gaming)",
-      "url": "https://news.google.com/rss/headlines/section/topic/GAMING?hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "gaming",
+      "slug": "indian-express-ent",
+      "name": "The Indian Express (Entertainment)",
+      "url": "https://indianexpress.com/section/entertainment/feed/",
+      "category": "entertainment",
       "ok": false,
-      "http_status": 200,
+      "http_status": 403,
       "articles": 0,
-      "error": "ValueError: feed is not well-formed XML even after cleanup: syntax error: line 1, column 0"
+      "error": "HTTP 403"
     }
   ],
   "trending_keywords": [
     {
       "word": "india",
-      "count": 51
+      "count": 38
     },
     {
-      "word": "brics",
-      "count": 36
+      "word": "game",
+      "count": 17
     },
     {
-      "word": "final",
-      "count": 24
-    },
-    {
-      "word": "film",
-      "count": 23
-    },
-    {
-      "word": "trump",
-      "count": 19
-    },
-    {
-      "word": "years",
-      "count": 16
-    },
-    {
-      "word": "open",
-      "count": 15
+      "word": "games",
+      "count": 14
     },
     {
       "word": "world",
-      "count": 15
-    },
-    {
-      "word": "calls",
       "count": 14
     },
     {
-      "word": "office",
-      "count": 14
-    },
-    {
-      "word": "attack",
+      "word": "russia",
       "count": 12
     },
     {
-      "word": "back",
+      "word": "scientists",
       "count": 12
     },
     {
-      "word": "found",
-      "count": 12
-    },
-    {
-      "word": "iran",
-      "count": 12
-    },
-    {
-      "word": "ireland",
+      "word": "delhi",
       "count": 11
+    },
+    {
+      "word": "epic",
+      "count": 11
+    },
+    {
+      "word": "gaming",
+      "count": 11
+    },
+    {
+      "word": "october",
+      "count": 11
+    },
+    {
+      "word": "officially",
+      "count": 11
+    },
+    {
+      "word": "protest",
+      "count": 11
+    },
+    {
+      "word": "year",
+      "count": 11
+    },
+    {
+      "word": "show",
+      "count": 10
+    },
+    {
+      "word": "star",
+      "count": 10
     }
   ],
   "history": [
@@ -542,6 +552,13 @@
       "feeds_ok": 34,
       "feeds_failed": 4,
       "articles": 680
+    },
+    {
+      "last_run": "2026-10-13T09:33:01.856917+00:00",
+      "duration_seconds": 16.55,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 637
     }
   ]
 }
