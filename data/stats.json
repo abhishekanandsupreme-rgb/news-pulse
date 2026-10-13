@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-13T09:33:01.856917+00:00",
-  "duration_seconds": 16.55,
+  "last_run": "2026-10-13T15:53:39.383857+00:00",
+  "duration_seconds": 12.17,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 637
+    "articles": 639
   },
   "categories": {
-    "entertainment": 60,
-    "gaming": 55,
-    "india": 94,
-    "movies": 42,
-    "world": 129,
-    "business": 49,
     "tech": 70,
-    "sports": 44,
-    "music": 44,
-    "science": 50
+    "movies": 42,
+    "india": 95,
+    "world": 127,
+    "sports": 45,
+    "science": 50,
+    "gaming": 55,
+    "entertainment": 60,
+    "music": 45,
+    "business": 50
   },
   "sources": [
     {
@@ -36,7 +36,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 23,
       "error": null
     },
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 7,
+      "articles": 5,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 24,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 24,
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 19,
+      "articles": 20,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -465,22 +465,38 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 38
+      "count": 39
+    },
+    {
+      "word": "apple",
+      "count": 20
+    },
+    {
+      "word": "year",
+      "count": 16
+    },
+    {
+      "word": "reveals",
+      "count": 15
     },
     {
       "word": "game",
-      "count": 17
+      "count": 14
     },
     {
       "word": "games",
-      "count": 14
+      "count": 13
     },
     {
-      "word": "world",
-      "count": 14
+      "word": "trump",
+      "count": 13
     },
     {
-      "word": "russia",
+      "word": "africa",
+      "count": 12
+    },
+    {
+      "word": "australia",
       "count": 12
     },
     {
@@ -488,39 +504,23 @@
       "count": 12
     },
     {
-      "word": "delhi",
+      "word": "back",
       "count": 11
     },
     {
-      "word": "epic",
+      "word": "home",
       "count": 11
     },
     {
-      "word": "gaming",
+      "word": "russia",
       "count": 11
     },
     {
-      "word": "october",
+      "word": "season",
       "count": 11
     },
     {
       "word": "officially",
-      "count": 11
-    },
-    {
-      "word": "protest",
-      "count": 11
-    },
-    {
-      "word": "year",
-      "count": 11
-    },
-    {
-      "word": "show",
-      "count": 10
-    },
-    {
-      "word": "star",
       "count": 10
     }
   ],
@@ -559,6 +559,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 637
+    },
+    {
+      "last_run": "2026-10-13T15:53:39.383857+00:00",
+      "duration_seconds": 12.17,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 639
     }
   ]
 }
