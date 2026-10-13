@@ -30,3 +30,7 @@ tmp/
 #           (this is also what keeps the scheduled workflow alive)
 #   docs/ — generated static site; rebuilt on every run and deployed to Pages
 #           straight from the workflow artifact, so it never needs committing
+
+# Auto-added protection rules
+node_modules/
+.next/

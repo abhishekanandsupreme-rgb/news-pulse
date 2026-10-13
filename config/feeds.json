@@ -45,7 +45,7 @@
 
     { "name": "IGN", "slug": "ign", "url": "https://feeds.ign.com/ign/all", "category": "gaming" },
     { "name": "Polygon", "slug": "polygon", "url": "https://www.polygon.com/rss/index.xml", "category": "gaming" },
-    { "name": "Google News (Gaming)", "slug": "google-gaming", "url": "https://news.google.com/rss/headlines/section/topic/GAMING?hl=en-IN&gl=IN&ceid=IN:en", "category": "gaming", "strip_source_suffix": true },
+    { "name": "Google News (Gaming)", "slug": "google-gaming", "url": "https://news.google.com/rss/search?q=gaming%20news&hl=en-IN&gl=IN&ceid=IN:en", "category": "gaming", "strip_source_suffix": true },
 
     { "name": "Billboard", "slug": "billboard", "url": "https://www.billboard.com/feed/", "category": "music" },
     { "name": "Rolling Stone (Music)", "slug": "rolling-stone", "url": "https://www.rollingstone.com/music/music-news/feed/", "category": "music" },

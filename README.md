@@ -2,7 +2,7 @@
 
 A self-updating news & entertainment magazine that runs forever on $0 of infrastructure.
 
-NewsPulse pulls the latest headlines and stories from 37 public RSS/Atom feeds across 10 categories (World, India, Tech, Business, Sports, Gaming, Music, Movies, Science, Entertainment), builds a fast static site, notifies search engines, commits the fresh data, and deploys to GitHub Pages — automatically, every two hours, with no servers, no paid services, and no secrets to manage.
+NewsPulse pulls the latest headlines and stories from 38 public RSS/Atom feeds across 10 categories (World, India, Tech, Business, Sports, Gaming, Music, Movies, Science, Entertainment), builds a fast static site, notifies search engines, commits the fresh data, and deploys to GitHub Pages — automatically, every two hours, with no servers, no paid services, and no secrets to manage.
 
 **Live site:** https://abhishekanandsupreme-rgb.github.io/news-pulse/
 

@@ -75,6 +75,12 @@ IMG_RE = re.compile(r"<img[^>]+?src=[\"']([^\"']+)[\"']", re.I)
 TOKEN_RE = re.compile(r"[a-z]+")
 IMG_EXT = (".jpg", ".jpeg", ".png", ".webp", ".gif")
 
+# Feeds are untrusted network input. CPython's ElementTree does not cap entity
+# amplification here (verified: 296 bytes of <!ENTITY> expanded to 100 KB), and
+# no configured feed declares entities, so definitions are refused outright.
+MAX_FEED_BYTES = 8 * 1024 * 1024          # largest live feed measured 354 KB
+ENTITY_DECL_RE = re.compile(rb"<!\s*ENTITY", re.I)
+
 # WordPress feeds append "The post X appeared first on Y." -- drop it.
 WP_FOOTER_RE = re.compile(
     r"\s*(the post|this post|this article|this content)[^.]*"
@@ -225,6 +231,28 @@ class FeedHTTPError(Exception):
         self.code = code
 
 
+class FeedTooLarge(ValueError):
+    """Body larger than MAX_FEED_BYTES, before or after inflation. Subclasses
+    ValueError so callers already handling bad feeds need no change."""
+
+
+def _read_bounded(resp, limit):
+    """Stream the body with a ceiling, so an oversized response cannot be
+    buffered into memory just to be thrown away."""
+    chunks, total = [], 0
+    while True:
+        part = resp.read(65536)
+        if not part:
+            break
+        chunks.append(part)
+        total += len(part)
+        if total > limit:
+            raise FeedTooLarge(
+                "feed body exceeds the %d MB size limit"
+                % (limit // (1024 * 1024)))
+    return b"".join(chunks)
+
+
 def http_get(url, timeout_s, user_agent, attempts):
     """GET a URL, transparently decoding gzip. Retries transport errors."""
     last_err = None
@@ -237,7 +265,7 @@ def http_get(url, timeout_s, user_agent, attempts):
         })
         try:
             with urllib.request.urlopen(req, timeout=timeout_s) as resp:
-                raw = resp.read()
+                raw = _read_bounded(resp, MAX_FEED_BYTES)
                 status = getattr(resp, "status", None) or resp.getcode()
                 enc = (resp.headers.get("Content-Encoding") or "").lower()
             if "gzip" in enc or raw[:2] == b"\x1f\x8b":
@@ -245,10 +273,16 @@ def http_get(url, timeout_s, user_agent, attempts):
                     raw = gzip.decompress(raw)
                 except Exception:
                     pass          # mislabelled body; try parsing as-is
+                if len(raw) > MAX_FEED_BYTES:
+                    raise FeedTooLarge(
+                        "decompressed feed exceeds the %d MB size limit"
+                        % (MAX_FEED_BYTES // (1024 * 1024)))
             return raw, status
         except urllib.error.HTTPError as e:
             raise FeedHTTPError(e.code, url) from e   # 4xx: don't retry
-        except Exception as e:                          # URLError, timeout...
+        except FeedTooLarge:
+            raise                                     # retrying won't shrink it
+        except Exception as e:                        # URLError, timeout...
             last_err = e
     raise last_err
 
@@ -290,10 +324,20 @@ def fix_unbound_prefixes(text):
 
 def parse_xml(raw):
     """ET.fromstring with a rescue pass for sloppy real-world feeds."""
+    if ENTITY_DECL_RE.search(raw or b""):
+        raise ValueError(
+            "feed declares <!ENTITY> definitions -- refused: entity expansion "
+            "can exhaust memory, and no feed we aggregate needs them")
     try:
         return ET.fromstring(raw)
     except ET.ParseError:
         pass
+    if not raw or not raw.strip():
+        raise ValueError("response body is empty -- upstream sent no feed "
+                         "(bot mitigation returns a 2xx with zero bytes)")
+    if raw.lstrip()[:200].lower().startswith((b"<!doctype html", b"<html")):
+        raise ValueError("response is an HTML page, not an XML feed -- wrong "
+                         "URL or an interstitial we cannot follow without a browser")
     text = raw.decode("utf-8", "replace")
     text = re.sub("[\x00-\x08\x0b\x0c\x0e-\x1f]", "", text)  # illegal in XML
     for ent, rep in BAD_ENTITIES.items():
@@ -425,6 +469,29 @@ def item_to_article(item, feed, desc_max):
 # --------------------------------------------------------------------------
 
 
+def is_wrapper_link(link):
+    """Google News redirect URLs hide the real article behind a expiring
+    /rss/articles/ token; the publisher's own link is always the better copy."""
+    m = re.match(r"https?://([^/?#]+)", (link or "").strip(), re.I)
+    host = (m.group(1) if m else "").lower()
+    return host == "news.google.com" or host.endswith(".news.google.com")
+
+
+def title_key(title):
+    return WS_RE.sub(" ", str(title or "").strip()).casefold()
+
+
+def drop_wrapped_duplicates(articles):
+    """Drop a Google News wrapper when a direct publisher link carries the same
+    headline. Two different outlets running the same headline are both kept --
+    only the redirect copy is redundant. Order-independent, non-mutating."""
+    direct = {title_key(a["title"]) for a in articles
+              if not is_wrapper_link(a["link"])}
+    return [a for a in articles
+            if not is_wrapper_link(a["link"])
+            or title_key(a["title"]) not in direct]
+
+
 def trending_keywords(articles, top=15):
     counts = {}
     for art in articles:
@@ -441,11 +508,29 @@ def trending_keywords(articles, top=15):
 # --------------------------------------------------------------------------
 
 
+def display_path(path, base):
+    """Repo-relative POSIX-style path for committed metadata. stats.json is
+    version-controlled, so an absolute path would leak the developer's home
+    directory and make every local run diff against CI's."""
+    p = os.path.abspath(path)
+    try:
+        rel = os.path.relpath(p, base)
+    except ValueError:                      # different drive letter (Windows)
+        return os.path.basename(p)
+    if rel.startswith(".."):
+        return os.path.basename(p)
+    return rel.replace(os.sep, "/")
+
+
 def write_json(path, obj):
-    """Atomic JSON write (tmp file + replace) so readers never see halves."""
+    """Atomic JSON write (tmp file + replace) so readers never see halves.
+
+    newline="" keeps LF endings on Windows: these files are committed by CI,
+    whose Linux writer emits LF, and a CRLF rewrite makes every line of a
+    500-line data file appear changed."""
     os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
     tmp = path + ".tmp"
-    with open(tmp, "w", encoding="utf-8") as fh:
+    with open(tmp, "w", encoding="utf-8", newline="\n") as fh:
         json.dump(obj, fh, ensure_ascii=False, indent=2)
         fh.write("\n")
     os.replace(tmp, path)
@@ -592,6 +677,12 @@ def main(argv=None):
                 % (name[:30], category[:14], rec["error"]))
 
     # ---- aggregate & write -------------------------------------------------
+    articles = drop_wrapped_duplicates(articles)
+    kept = {}
+    for a in articles:
+        kept[a["source_slug"]] = kept.get(a["source_slug"], 0) + 1
+    for rec in per_feed:
+        rec["articles"] = kept.get(rec["slug"], 0)
     articles.sort(key=lambda a: a["published_ts"] or 0.0, reverse=True)
     categories = {}
     for a in articles:
@@ -626,7 +717,7 @@ def main(argv=None):
         "last_run": finished.isoformat(),
         "duration_seconds": duration,
         "config": {
-            "config_file": os.path.abspath(opts["config"]),
+            "config_file": display_path(opts["config"], BASE_DIR),
             "timeout_seconds": settings["timeout_seconds"],
             "max_items_per_feed": settings["max_items_per_feed"],
             "description_max_chars": settings["description_max_chars"],

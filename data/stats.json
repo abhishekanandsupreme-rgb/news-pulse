@@ -3,7 +3,7 @@
   "last_run": "2026-09-12T21:40:50.724515+00:00",
   "duration_seconds": 31.96,
   "config": {
-    "config_file": "C:\\Users\\asus\\news-pulse\\config\\feeds.json",
+    "config_file": "config/feeds.json",
     "timeout_seconds": 10,
     "max_items_per_feed": 25,
     "description_max_chars": 500,
