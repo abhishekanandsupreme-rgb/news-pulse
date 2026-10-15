@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-14T23:09:35.947011+00:00",
-  "duration_seconds": 54.83,
+  "last_run": "2026-10-15T04:26:59.984054+00:00",
+  "duration_seconds": 10.49,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -12,21 +12,21 @@
   },
   "totals": {
     "feeds": 38,
-    "feeds_ok": 27,
-    "feeds_failed": 11,
-    "articles": 500
+    "feeds_ok": 33,
+    "feeds_failed": 5,
+    "articles": 642
   },
   "categories": {
-    "movies": 42,
-    "entertainment": 35,
-    "science": 50,
-    "tech": 70,
-    "india": 73,
-    "music": 20,
-    "gaming": 30,
     "world": 130,
-    "business": 25,
-    "sports": 25
+    "movies": 42,
+    "science": 50,
+    "entertainment": 59,
+    "gaming": 55,
+    "music": 45,
+    "india": 98,
+    "business": 50,
+    "sports": 43,
+    "tech": 70
   },
   "sources": [
     {
@@ -104,10 +104,10 @@
       "name": "Google News (India)",
       "url": "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en",
       "category": "india",
-      "ok": false,
-      "http_status": 503,
-      "articles": 0,
-      "error": "HTTP 503"
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
     },
     {
       "slug": "thehindu",
@@ -214,10 +214,10 @@
       "name": "Google News (Business India)",
       "url": "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-IN&gl=IN&ceid=IN:en",
       "category": "business",
-      "ok": false,
-      "http_status": 503,
-      "articles": 0,
-      "error": "HTTP 503"
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
     },
     {
       "slug": "espn",
@@ -244,10 +244,10 @@
       "name": "Google News (Sports India)",
       "url": "https://news.google.com/rss/headlines/section/topic/SPORTS?hl=en-IN&gl=IN&ceid=IN:en",
       "category": "sports",
-      "ok": false,
-      "http_status": 503,
-      "articles": 0,
-      "error": "HTTP 503"
+      "ok": true,
+      "http_status": 200,
+      "articles": 18,
+      "error": null
     },
     {
       "slug": "ign",
@@ -274,10 +274,10 @@
       "name": "Google News (Gaming)",
       "url": "https://news.google.com/rss/search?q=gaming%20news&hl=en-IN&gl=IN&ceid=IN:en",
       "category": "gaming",
-      "ok": false,
-      "http_status": 503,
-      "articles": 0,
-      "error": "HTTP 503"
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
     },
     {
       "slug": "billboard",
@@ -304,10 +304,10 @@
       "name": "Google News (Music India)",
       "url": "https://news.google.com/rss/headlines/section/topic/MUSIC?hl=en-IN&gl=IN&ceid=IN:en",
       "category": "music",
-      "ok": false,
-      "http_status": 503,
-      "articles": 0,
-      "error": "HTTP 503"
+      "ok": true,
+      "http_status": 200,
+      "articles": 25,
+      "error": null
     },
     {
       "slug": "variety",
@@ -404,23 +404,13 @@
       "name": "Google News (Entertainment India)",
       "url": "https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=en-IN&gl=IN&ceid=IN:en",
       "category": "entertainment",
-      "ok": false,
-      "http_status": 503,
-      "articles": 0,
-      "error": "HTTP 503"
+      "ok": true,
+      "http_status": 200,
+      "articles": 24,
+      "error": null
     }
   ],
   "failures": [
-    {
-      "slug": "google-news-india",
-      "name": "Google News (India)",
-      "url": "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "india",
-      "ok": false,
-      "http_status": 503,
-      "articles": 0,
-      "error": "HTTP 503"
-    },
     {
       "slug": "indian-express",
       "name": "The Indian Express",
@@ -452,16 +442,6 @@
       "error": "HTTP 403"
     },
     {
-      "slug": "google-business-india",
-      "name": "Google News (Business India)",
-      "url": "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "business",
-      "ok": false,
-      "http_status": 503,
-      "articles": 0,
-      "error": "HTTP 503"
-    },
-    {
       "slug": "espn",
       "name": "ESPN (Top News)",
       "url": "https://www.espn.com/espn/rss/news",
@@ -472,36 +452,6 @@
       "error": "ValueError: response body is empty -- upstream sent no feed (bot mitigation returns a 2xx with zero bytes)"
     },
     {
-      "slug": "google-sports-india",
-      "name": "Google News (Sports India)",
-      "url": "https://news.google.com/rss/headlines/section/topic/SPORTS?hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "sports",
-      "ok": false,
-      "http_status": 503,
-      "articles": 0,
-      "error": "HTTP 503"
-    },
-    {
-      "slug": "google-gaming",
-      "name": "Google News (Gaming)",
-      "url": "https://news.google.com/rss/search?q=gaming%20news&hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "gaming",
-      "ok": false,
-      "http_status": 503,
-      "articles": 0,
-      "error": "HTTP 503"
-    },
-    {
-      "slug": "google-music-india",
-      "name": "Google News (Music India)",
-      "url": "https://news.google.com/rss/headlines/section/topic/MUSIC?hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "music",
-      "ok": false,
-      "http_status": 503,
-      "articles": 0,
-      "error": "HTTP 503"
-    },
-    {
       "slug": "indian-express-ent",
       "name": "The Indian Express (Entertainment)",
       "url": "https://indianexpress.com/section/entertainment/feed/",
@@ -510,37 +460,31 @@
       "http_status": 403,
       "articles": 0,
       "error": "HTTP 403"
-    },
-    {
-      "slug": "google-ent-india",
-      "name": "Google News (Entertainment India)",
-      "url": "https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=en-IN&gl=IN&ceid=IN:en",
-      "category": "entertainment",
-      "ok": false,
-      "http_status": 503,
-      "articles": 0,
-      "error": "HTTP 503"
     }
   ],
   "trending_keywords": [
     {
       "word": "india",
-      "count": 27
-    },
-    {
-      "word": "ukraine",
-      "count": 15
-    },
-    {
-      "word": "officially",
-      "count": 13
+      "count": 38
     },
     {
       "word": "trump",
+      "count": 18
+    },
+    {
+      "word": "protest",
       "count": 13
     },
     {
-      "word": "russia",
+      "word": "ukraine",
+      "count": 13
+    },
+    {
+      "word": "game",
+      "count": 12
+    },
+    {
+      "word": "october",
       "count": 12
     },
     {
@@ -548,7 +492,11 @@
       "count": 12
     },
     {
-      "word": "starlink",
+      "word": "season",
+      "count": 12
+    },
+    {
+      "word": "year",
       "count": 12
     },
     {
@@ -556,32 +504,24 @@
       "count": 12
     },
     {
-      "word": "world",
+      "word": "delhi",
       "count": 11
     },
     {
-      "word": "year",
+      "word": "games",
       "count": 11
     },
     {
-      "word": "west",
-      "count": 10
+      "word": "indian",
+      "count": 11
     },
     {
-      "word": "deal",
-      "count": 9
+      "word": "starlink",
+      "count": 11
     },
     {
-      "word": "protest",
-      "count": 9
-    },
-    {
-      "word": "across",
-      "count": 8
-    },
-    {
-      "word": "australia",
-      "count": 8
+      "word": "today",
+      "count": 11
     }
   ],
   "history": [
@@ -668,6 +608,13 @@
       "feeds_ok": 27,
       "feeds_failed": 11,
       "articles": 500
+    },
+    {
+      "last_run": "2026-10-15T04:26:59.984054+00:00",
+      "duration_seconds": 10.49,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 642
     }
   ]
 }
