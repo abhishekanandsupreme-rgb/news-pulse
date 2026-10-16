@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-16T13:12:10.326904+00:00",
-  "duration_seconds": 14.92,
+  "last_run": "2026-10-16T17:58:16.187200+00:00",
+  "duration_seconds": 11.76,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -17,16 +17,16 @@
     "articles": 639
   },
   "categories": {
-    "tech": 70,
     "movies": 42,
-    "world": 130,
-    "india": 92,
     "entertainment": 60,
+    "music": 44,
+    "tech": 70,
+    "india": 93,
+    "world": 133,
     "science": 50,
-    "business": 49,
     "gaming": 54,
-    "sports": 50,
-    "music": 42
+    "sports": 44,
+    "business": 49
   },
   "sources": [
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 8,
+      "articles": 9,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 24,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 19,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 24,
       "error": null
     },
     {
@@ -465,7 +465,19 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 37
+      "count": 47
+    },
+    {
+      "word": "bank",
+      "count": 18
+    },
+    {
+      "word": "movie",
+      "count": 14
+    },
+    {
+      "word": "series",
+      "count": 14
     },
     {
       "word": "trump",
@@ -473,10 +485,18 @@
     },
     {
       "word": "ukraine",
+      "count": 14
+    },
+    {
+      "word": "games",
       "count": 13
     },
     {
-      "word": "game",
+      "word": "protests",
+      "count": 12
+    },
+    {
+      "word": "test",
       "count": 12
     },
     {
@@ -488,39 +508,19 @@
       "count": 11
     },
     {
-      "word": "indian",
-      "count": 11
-    },
-    {
-      "word": "protest",
-      "count": 11
-    },
-    {
-      "word": "reveals",
-      "count": 11
-    },
-    {
-      "word": "review",
-      "count": 11
-    },
-    {
-      "word": "school",
-      "count": 11
-    },
-    {
-      "word": "series",
-      "count": 11
-    },
-    {
       "word": "time",
       "count": 11
     },
     {
-      "word": "china",
+      "word": "october",
       "count": 10
     },
     {
-      "word": "games",
+      "word": "scientists",
+      "count": 10
+    },
+    {
+      "word": "support",
       "count": 10
     }
   ],
@@ -654,6 +654,13 @@
     {
       "last_run": "2026-10-16T13:12:10.326904+00:00",
       "duration_seconds": 14.92,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 639
+    },
+    {
+      "last_run": "2026-10-16T17:58:16.187200+00:00",
+      "duration_seconds": 11.76,
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 639
