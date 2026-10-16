@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-16T00:18:50.640572+00:00",
-  "duration_seconds": 11.4,
+  "last_run": "2026-10-16T07:03:44.519032+00:00",
+  "duration_seconds": 8.53,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 637
+    "articles": 633
   },
   "categories": {
     "movies": 42,
-    "music": 42,
-    "entertainment": 60,
     "india": 92,
-    "gaming": 54,
-    "world": 131,
+    "world": 129,
+    "sports": 44,
+    "gaming": 55,
+    "business": 49,
     "science": 50,
     "tech": 70,
-    "business": 50,
-    "sports": 46
+    "music": 42,
+    "entertainment": 60
   },
   "sources": [
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 8,
+      "articles": 7,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 22,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 18,
+      "articles": 17,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 19,
       "error": null
     },
     {
@@ -276,7 +276,7 @@
       "category": "gaming",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -469,30 +469,38 @@
     },
     {
       "word": "game",
-      "count": 15
-    },
-    {
-      "word": "series",
-      "count": 15
+      "count": 18
     },
     {
       "word": "trump",
-      "count": 14
-    },
-    {
-      "word": "ahead",
-      "count": 13
-    },
-    {
-      "word": "games",
-      "count": 13
+      "count": 17
     },
     {
       "word": "officially",
-      "count": 12
+      "count": 14
+    },
+    {
+      "word": "reveals",
+      "count": 13
     },
     {
       "word": "school",
+      "count": 13
+    },
+    {
+      "word": "years",
+      "count": 13
+    },
+    {
+      "word": "indian",
+      "count": 12
+    },
+    {
+      "word": "protest",
+      "count": 12
+    },
+    {
+      "word": "season",
       "count": 12
     },
     {
@@ -500,7 +508,7 @@
       "count": 12
     },
     {
-      "word": "five",
+      "word": "back",
       "count": 11
     },
     {
@@ -508,20 +516,12 @@
       "count": 11
     },
     {
-      "word": "delhi",
+      "word": "bank",
       "count": 10
     },
     {
-      "word": "netflix",
+      "word": "five",
       "count": 10
-    },
-    {
-      "word": "years",
-      "count": 10
-    },
-    {
-      "word": "attack",
-      "count": 9
     }
   ],
   "history": [
@@ -643,6 +643,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 637
+    },
+    {
+      "last_run": "2026-10-16T07:03:44.519032+00:00",
+      "duration_seconds": 8.53,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 633
     }
   ]
 }
