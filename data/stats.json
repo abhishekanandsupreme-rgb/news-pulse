@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-16T20:58:55.423235+00:00",
-  "duration_seconds": 12.1,
+  "last_run": "2026-10-17T00:22:11.381650+00:00",
+  "duration_seconds": 11.12,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 642
+    "articles": 640
   },
   "categories": {
-    "movies": 42,
-    "tech": 70,
-    "science": 50,
-    "world": 134,
-    "music": 44,
-    "india": 93,
     "entertainment": 60,
-    "gaming": 55,
-    "business": 48,
-    "sports": 46
+    "india": 93,
+    "music": 44,
+    "movies": 42,
+    "world": 132,
+    "science": 50,
+    "tech": 70,
+    "gaming": 54,
+    "sports": 47,
+    "business": 48
   },
   "sources": [
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 10,
+      "articles": 9,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 23,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 22,
       "error": null
     },
     {
@@ -276,7 +276,7 @@
       "category": "gaming",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -465,26 +465,38 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 49
+      "count": 42
     },
     {
       "word": "trump",
-      "count": 19
+      "count": 18
+    },
+    {
+      "word": "protests",
+      "count": 16
     },
     {
       "word": "bank",
       "count": 15
     },
     {
-      "word": "protests",
+      "word": "games",
       "count": 14
     },
     {
-      "word": "games",
-      "count": 12
+      "word": "movie",
+      "count": 13
     },
     {
       "word": "indian",
+      "count": 12
+    },
+    {
+      "word": "reveals",
+      "count": 12
+    },
+    {
+      "word": "scientists",
       "count": 12
     },
     {
@@ -492,35 +504,23 @@
       "count": 12
     },
     {
-      "word": "ukraine",
+      "word": "west",
       "count": 12
     },
     {
-      "word": "delhi",
+      "word": "game",
       "count": 11
     },
     {
-      "word": "gaming",
+      "word": "ukraine",
       "count": 11
     },
     {
-      "word": "ahead",
+      "word": "death",
       "count": 10
     },
     {
-      "word": "movie",
-      "count": 10
-    },
-    {
-      "word": "play",
-      "count": 10
-    },
-    {
-      "word": "press",
-      "count": 10
-    },
-    {
-      "word": "protest",
+      "word": "music",
       "count": 10
     }
   ],
@@ -671,6 +671,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 642
+    },
+    {
+      "last_run": "2026-10-17T00:22:11.381650+00:00",
+      "duration_seconds": 11.12,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 640
     }
   ]
 }
