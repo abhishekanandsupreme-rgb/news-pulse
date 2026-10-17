@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-17T17:03:28.311741+00:00",
-  "duration_seconds": 9.92,
+  "last_run": "2026-10-17T20:29:49.981857+00:00",
+  "duration_seconds": 7.96,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 631
+    "articles": 628
   },
   "categories": {
-    "movies": 42,
-    "india": 90,
-    "science": 50,
-    "world": 126,
     "entertainment": 60,
+    "movies": 42,
+    "india": 91,
     "tech": 70,
+    "world": 124,
+    "music": 43,
     "gaming": 55,
-    "music": 45,
-    "sports": 43,
-    "business": 50
+    "science": 50,
+    "business": 50,
+    "sports": 43
   },
   "sources": [
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 6,
+      "articles": 5,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 21,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 17,
+      "articles": 18,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 23,
       "error": null
     },
     {
@@ -476,52 +476,52 @@
       "count": 18
     },
     {
-      "word": "france",
-      "count": 17
+      "word": "protests",
+      "count": 15
     },
     {
-      "word": "years",
-      "count": 17
+      "word": "series",
+      "count": 15
     },
     {
       "word": "trump",
-      "count": 16
-    },
-    {
-      "word": "protest",
-      "count": 14
-    },
-    {
-      "word": "protests",
-      "count": 14
-    },
-    {
-      "word": "movie",
-      "count": 12
-    },
-    {
-      "word": "world",
-      "count": 12
-    },
-    {
-      "word": "delhi",
-      "count": 11
+      "count": 15
     },
     {
       "word": "gaming",
-      "count": 11
+      "count": 14
+    },
+    {
+      "word": "years",
+      "count": 14
+    },
+    {
+      "word": "france",
+      "count": 13
+    },
+    {
+      "word": "ahead",
+      "count": 12
+    },
+    {
+      "word": "local",
+      "count": 12
     },
     {
       "word": "russia",
-      "count": 11
+      "count": 12
+    },
+    {
+      "word": "star",
+      "count": 12
     },
     {
       "word": "west",
-      "count": 11
+      "count": 12
     },
     {
-      "word": "back",
-      "count": 10
+      "word": "reveals",
+      "count": 11
     }
   ],
   "history": [
@@ -699,6 +699,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 631
+    },
+    {
+      "last_run": "2026-10-17T20:29:49.981857+00:00",
+      "duration_seconds": 7.96,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 628
     }
   ]
 }
