@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-18T04:20:29.463101+00:00",
-  "duration_seconds": 21.08,
+  "last_run": "2026-10-18T10:55:31.401967+00:00",
+  "duration_seconds": 17.9,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 627
+    "articles": 631
   },
   "categories": {
+    "world": 127,
     "movies": 42,
-    "india": 91,
-    "sports": 41,
-    "world": 126,
+    "india": 90,
+    "entertainment": 59,
+    "music": 43,
     "gaming": 55,
     "business": 50,
-    "entertainment": 59,
-    "science": 50,
+    "sports": 45,
     "tech": 70,
-    "music": 43
+    "science": 50
   },
   "sources": [
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 5,
+      "articles": 6,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 23,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 16,
+      "articles": 20,
       "error": null
     },
     {
@@ -465,63 +465,63 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 44
+      "count": 43
     },
     {
       "word": "game",
-      "count": 23
-    },
-    {
-      "word": "bank",
-      "count": 20
-    },
-    {
-      "word": "trump",
-      "count": 19
-    },
-    {
-      "word": "west",
-      "count": 18
-    },
-    {
-      "word": "france",
-      "count": 17
+      "count": 26
     },
     {
       "word": "protests",
-      "count": 17
+      "count": 21
     },
     {
-      "word": "series",
-      "count": 16
+      "word": "france",
+      "count": 20
     },
     {
-      "word": "years",
-      "count": 16
+      "word": "officially",
+      "count": 14
     },
     {
-      "word": "russia",
-      "count": 13
+      "word": "trump",
+      "count": 14
     },
     {
       "word": "world",
+      "count": 14
+    },
+    {
+      "word": "years",
+      "count": 14
+    },
+    {
+      "word": "west",
       "count": 13
     },
     {
-      "word": "gaming",
+      "word": "bank",
       "count": 12
     },
     {
-      "word": "movie",
-      "count": 11
-    },
-    {
-      "word": "police",
-      "count": 11
-    },
-    {
       "word": "reveals",
+      "count": 12
+    },
+    {
+      "word": "death",
       "count": 11
+    },
+    {
+      "word": "james",
+      "count": 11
+    },
+    {
+      "word": "ahead",
+      "count": 10
+    },
+    {
+      "word": "movie",
+      "count": 10
     }
   ],
   "history": [
@@ -720,6 +720,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 627
+    },
+    {
+      "last_run": "2026-10-18T10:55:31.401967+00:00",
+      "duration_seconds": 17.9,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 631
     }
   ]
 }
