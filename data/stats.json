@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-17T23:58:28.519610+00:00",
-  "duration_seconds": 10.86,
+  "last_run": "2026-10-18T04:20:29.463101+00:00",
+  "duration_seconds": 21.08,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 628
+    "articles": 627
   },
   "categories": {
     "movies": 42,
-    "world": 127,
-    "entertainment": 59,
-    "india": 90,
-    "tech": 70,
+    "india": 91,
+    "sports": 41,
+    "world": 126,
     "gaming": 55,
-    "music": 43,
-    "sports": 43,
+    "business": 50,
+    "entertainment": 59,
     "science": 50,
-    "business": 49
+    "tech": 70,
+    "music": 43
   },
   "sources": [
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 6,
+      "articles": 5,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 24,
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 18,
+      "articles": 16,
       "error": null
     },
     {
@@ -465,38 +465,46 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 42
+      "count": 44
     },
     {
       "word": "game",
+      "count": 23
+    },
+    {
+      "word": "bank",
       "count": 20
     },
     {
-      "word": "protests",
+      "word": "trump",
       "count": 19
+    },
+    {
+      "word": "west",
+      "count": 18
     },
     {
       "word": "france",
       "count": 17
     },
     {
-      "word": "bank",
-      "count": 16
-    },
-    {
-      "word": "trump",
-      "count": 15
-    },
-    {
-      "word": "years",
-      "count": 14
-    },
-    {
-      "word": "officially",
-      "count": 13
+      "word": "protests",
+      "count": 17
     },
     {
       "word": "series",
+      "count": 16
+    },
+    {
+      "word": "years",
+      "count": 16
+    },
+    {
+      "word": "russia",
+      "count": 13
+    },
+    {
+      "word": "world",
       "count": 13
     },
     {
@@ -504,24 +512,16 @@
       "count": 12
     },
     {
+      "word": "movie",
+      "count": 11
+    },
+    {
+      "word": "police",
+      "count": 11
+    },
+    {
       "word": "reveals",
       "count": 11
-    },
-    {
-      "word": "russia",
-      "count": 11
-    },
-    {
-      "word": "cancer",
-      "count": 10
-    },
-    {
-      "word": "movie",
-      "count": 10
-    },
-    {
-      "word": "office",
-      "count": 10
     }
   ],
   "history": [
@@ -713,6 +713,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 628
+    },
+    {
+      "last_run": "2026-10-18T04:20:29.463101+00:00",
+      "duration_seconds": 21.08,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 627
     }
   ]
 }
