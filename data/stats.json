@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-18T18:35:08.708410+00:00",
-  "duration_seconds": 13.01,
+  "last_run": "2026-10-18T22:23:13.579511+00:00",
+  "duration_seconds": 8.22,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 634
+    "articles": 637
   },
   "categories": {
-    "entertainment": 59,
-    "india": 90,
-    "movies": 42,
     "tech": 70,
-    "world": 130,
+    "world": 129,
+    "movies": 42,
+    "entertainment": 60,
+    "india": 90,
     "gaming": 54,
-    "science": 50,
     "music": 44,
-    "business": 49,
-    "sports": 46
+    "science": 50,
+    "sports": 49,
+    "business": 49
   },
   "sources": [
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 21,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 24,
       "error": null
     },
     {
@@ -406,7 +406,7 @@
       "category": "entertainment",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     }
   ],
@@ -465,73 +465,66 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 34
+      "count": 35
     },
     {
       "word": "protests",
-      "count": 27
+      "count": 23
     },
     {
       "word": "game",
-      "count": 26
-    },
-    {
-      "word": "france",
       "count": 22
     },
     {
-      "word": "bank",
-      "count": 16
+      "word": "france",
+      "count": 19
     },
     {
       "word": "trump",
+      "count": 17
+    },
+    {
+      "word": "movie",
+      "count": 15
+    },
+    {
+      "word": "week",
+      "count": 15
+    },
+    {
+      "word": "bank",
+      "count": 14
+    },
+    {
+      "word": "office",
       "count": 14
     },
     {
       "word": "ahead",
-      "count": 12
-    },
-    {
-      "word": "office",
-      "count": 12
+      "count": 13
     },
     {
       "word": "scientists",
+      "count": 13
+    },
+    {
+      "word": "film",
       "count": 12
     },
     {
-      "word": "west",
+      "word": "taylor",
       "count": 12
     },
     {
-      "word": "series",
+      "word": "years",
+      "count": 12
+    },
+    {
+      "word": "games",
       "count": 11
-    },
-    {
-      "word": "tour",
-      "count": 11
-    },
-    {
-      "word": "world",
-      "count": 11
-    },
-    {
-      "word": "attack",
-      "count": 10
-    },
-    {
-      "word": "fighter",
-      "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-09-12T10:50:58.334535+00:00",
-      "duration_seconds": 24.32,
-      "feeds_ok": 24,
-      "feeds_failed": 0,
-      "articles": 442
-    },
     {
       "last_run": "2026-09-12T10:53:27.421331+00:00",
       "duration_seconds": 13.22,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 634
+    },
+    {
+      "last_run": "2026-10-18T22:23:13.579511+00:00",
+      "duration_seconds": 8.22,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 637
     }
   ]
 }
