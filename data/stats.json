@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-19T04:30:44.047287+00:00",
-  "duration_seconds": 13.01,
+  "last_run": "2026-10-19T12:58:29.576838+00:00",
+  "duration_seconds": 9.86,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 635
+    "articles": 640
   },
   "categories": {
+    "tech": 70,
+    "india": 92,
     "movies": 42,
+    "sports": 47,
+    "world": 130,
     "science": 50,
-    "world": 129,
-    "india": 91,
-    "sports": 46,
-    "music": 42,
+    "music": 44,
     "gaming": 55,
     "entertainment": 60,
-    "business": 50,
-    "tech": 70
+    "business": 50
   },
   "sources": [
     {
@@ -36,7 +36,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 8,
+      "articles": 10,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 17,
+      "articles": 18,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 22,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 24,
       "error": null
     },
     {
@@ -465,54 +465,26 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 38
+      "count": 36
     },
     {
-      "word": "game",
-      "count": 23
-    },
-    {
-      "word": "trump",
-      "count": 21
-    },
-    {
-      "word": "protests",
-      "count": 20
+      "word": "years",
+      "count": 19
     },
     {
       "word": "france",
-      "count": 18
+      "count": 16
     },
     {
-      "word": "bank",
-      "count": 15
-    },
-    {
-      "word": "october",
-      "count": 14
-    },
-    {
-      "word": "scientists",
-      "count": 13
-    },
-    {
-      "word": "series",
-      "count": 13
+      "word": "protests",
+      "count": 16
     },
     {
       "word": "show",
-      "count": 13
+      "count": 15
     },
     {
-      "word": "star",
-      "count": 13
-    },
-    {
-      "word": "today",
-      "count": 13
-    },
-    {
-      "word": "week",
+      "word": "time",
       "count": 13
     },
     {
@@ -522,16 +494,37 @@
     {
       "word": "film",
       "count": 12
+    },
+    {
+      "word": "french",
+      "count": 12
+    },
+    {
+      "word": "games",
+      "count": 12
+    },
+    {
+      "word": "delhi",
+      "count": 11
+    },
+    {
+      "word": "game",
+      "count": 11
+    },
+    {
+      "word": "gaming",
+      "count": 11
+    },
+    {
+      "word": "reveals",
+      "count": 11
+    },
+    {
+      "word": "scientists",
+      "count": 11
     }
   ],
   "history": [
-    {
-      "last_run": "2026-09-12T21:40:50.724515+00:00",
-      "duration_seconds": 31.96,
-      "feeds_ok": 34,
-      "feeds_failed": 4,
-      "articles": 680
-    },
     {
       "last_run": "2026-10-13T09:33:01.856917+00:00",
       "duration_seconds": 16.55,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 635
+    },
+    {
+      "last_run": "2026-10-19T12:58:29.576838+00:00",
+      "duration_seconds": 9.86,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 640
     }
   ]
 }
