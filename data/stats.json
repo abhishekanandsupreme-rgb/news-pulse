@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-19T12:58:29.576838+00:00",
-  "duration_seconds": 9.86,
+  "last_run": "2026-10-19T19:49:12.187906+00:00",
+  "duration_seconds": 12.94,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -12,21 +12,21 @@
   },
   "totals": {
     "feeds": 38,
-    "feeds_ok": 33,
-    "feeds_failed": 5,
-    "articles": 640
+    "feeds_ok": 32,
+    "feeds_failed": 6,
+    "articles": 616
   },
   "categories": {
-    "tech": 70,
-    "india": 92,
     "movies": 42,
-    "sports": 47,
-    "world": 130,
-    "science": 50,
-    "music": 44,
-    "gaming": 55,
+    "india": 92,
+    "world": 134,
     "entertainment": 60,
-    "business": 50
+    "science": 25,
+    "music": 45,
+    "tech": 70,
+    "gaming": 54,
+    "business": 50,
+    "sports": 44
   },
   "sources": [
     {
@@ -36,7 +36,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 24,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 19,
       "error": null
     },
     {
@@ -276,7 +276,7 @@
       "category": "gaming",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -354,10 +354,10 @@
       "name": "ScienceDaily (All)",
       "url": "https://www.sciencedaily.com/rss/all.xml",
       "category": "science",
-      "ok": true,
+      "ok": false,
       "http_status": 200,
-      "articles": 25,
-      "error": null
+      "articles": 0,
+      "error": "ValueError: feed is not well-formed XML even after cleanup: junk after document element: line 440, column 46"
     },
     {
       "slug": "phys-org",
@@ -452,6 +452,16 @@
       "error": "ValueError: response body is empty -- upstream sent no feed (bot mitigation returns a 2xx with zero bytes)"
     },
     {
+      "slug": "sciencedaily",
+      "name": "ScienceDaily (All)",
+      "url": "https://www.sciencedaily.com/rss/all.xml",
+      "category": "science",
+      "ok": false,
+      "http_status": 200,
+      "articles": 0,
+      "error": "ValueError: feed is not well-formed XML even after cleanup: junk after document element: line 440, column 46"
+    },
+    {
       "slug": "indian-express-ent",
       "name": "The Indian Express (Entertainment)",
       "url": "https://indianexpress.com/section/entertainment/feed/",
@@ -465,73 +475,66 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 36
+      "count": 40
     },
     {
-      "word": "years",
-      "count": 19
+      "word": "ahead",
+      "count": 16
     },
     {
       "word": "france",
-      "count": 16
-    },
-    {
-      "word": "protests",
-      "count": 16
-    },
-    {
-      "word": "show",
       "count": 15
     },
     {
-      "word": "time",
-      "count": 13
-    },
-    {
-      "word": "world",
-      "count": 13
-    },
-    {
-      "word": "film",
-      "count": 12
-    },
-    {
-      "word": "french",
-      "count": 12
-    },
-    {
-      "word": "games",
-      "count": 12
-    },
-    {
-      "word": "delhi",
-      "count": 11
-    },
-    {
       "word": "game",
-      "count": 11
+      "count": 14
     },
     {
       "word": "gaming",
+      "count": 12
+    },
+    {
+      "word": "people",
+      "count": 12
+    },
+    {
+      "word": "week",
+      "count": 12
+    },
+    {
+      "word": "world",
+      "count": 12
+    },
+    {
+      "word": "bank",
       "count": 11
     },
     {
-      "word": "reveals",
+      "word": "series",
       "count": 11
     },
     {
-      "word": "scientists",
+      "word": "show",
       "count": 11
+    },
+    {
+      "word": "star",
+      "count": 11
+    },
+    {
+      "word": "trump",
+      "count": 11
+    },
+    {
+      "word": "years",
+      "count": 11
+    },
+    {
+      "word": "games",
+      "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-13T09:33:01.856917+00:00",
-      "duration_seconds": 16.55,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 637
-    },
     {
       "last_run": "2026-10-13T15:53:39.383857+00:00",
       "duration_seconds": 12.17,
@@ -734,6 +737,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 640
+    },
+    {
+      "last_run": "2026-10-19T19:49:12.187906+00:00",
+      "duration_seconds": 12.94,
+      "feeds_ok": 32,
+      "feeds_failed": 6,
+      "articles": 616
     }
   ]
 }
