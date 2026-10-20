@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-19T23:33:57.918639+00:00",
-  "duration_seconds": 10.38,
+  "last_run": "2026-10-20T04:40:01.520291+00:00",
+  "duration_seconds": 11.32,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 32,
     "feeds_failed": 6,
-    "articles": 620
+    "articles": 617
   },
   "categories": {
     "movies": 42,
     "entertainment": 60,
-    "world": 133,
-    "tech": 70,
+    "world": 132,
+    "gaming": 55,
+    "sports": 48,
+    "business": 50,
+    "india": 91,
     "science": 25,
     "music": 44,
-    "gaming": 55,
-    "india": 93,
-    "sports": 48,
-    "business": 50
+    "tech": 70
   },
   "sources": [
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 10,
+      "articles": 9,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 18,
+      "articles": 17,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -475,73 +475,66 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 44
-    },
-    {
-      "word": "france",
-      "count": 15
+      "count": 36
     },
     {
       "word": "game",
-      "count": 15
+      "count": 20
     },
     {
-      "word": "trump",
-      "count": 15
+      "word": "france",
+      "count": 18
     },
     {
       "word": "games",
-      "count": 13
-    },
-    {
-      "word": "years",
-      "count": 13
-    },
-    {
-      "word": "gaming",
-      "count": 12
-    },
-    {
-      "word": "world",
-      "count": 12
-    },
-    {
-      "word": "launch",
-      "count": 11
+      "count": 16
     },
     {
       "word": "music",
+      "count": 16
+    },
+    {
+      "word": "october",
+      "count": 16
+    },
+    {
+      "word": "today",
+      "count": 16
+    },
+    {
+      "word": "trump",
+      "count": 16
+    },
+    {
+      "word": "release",
+      "count": 12
+    },
+    {
+      "word": "gold",
       "count": 11
     },
     {
-      "word": "ahead",
-      "count": 10
+      "word": "latin",
+      "count": 11
     },
     {
-      "word": "attacks",
-      "count": 10
+      "word": "ukraine",
+      "count": 11
     },
     {
-      "word": "killed",
-      "count": 10
+      "word": "world",
+      "count": 11
     },
     {
-      "word": "office",
-      "count": 10
+      "word": "years",
+      "count": 11
     },
     {
-      "word": "officially",
+      "word": "disney",
       "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-13T21:11:13.032325+00:00",
-      "duration_seconds": 16.56,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 643
-    },
     {
       "last_run": "2026-10-14T01:09:18.747948+00:00",
       "duration_seconds": 11.49,
@@ -744,6 +737,13 @@
       "feeds_ok": 32,
       "feeds_failed": 6,
       "articles": 620
+    },
+    {
+      "last_run": "2026-10-20T04:40:01.520291+00:00",
+      "duration_seconds": 11.32,
+      "feeds_ok": 32,
+      "feeds_failed": 6,
+      "articles": 617
     }
   ]
 }
