@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-20T11:25:49.554704+00:00",
-  "duration_seconds": 14.11,
+  "last_run": "2026-10-20T16:52:23.616756+00:00",
+  "duration_seconds": 15.09,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -12,21 +12,21 @@
   },
   "totals": {
     "feeds": 38,
-    "feeds_ok": 32,
-    "feeds_failed": 6,
-    "articles": 616
+    "feeds_ok": 33,
+    "feeds_failed": 5,
+    "articles": 644
   },
   "categories": {
-    "science": 25,
-    "gaming": 55,
+    "world": 134,
     "movies": 42,
-    "world": 132,
-    "india": 92,
-    "sports": 47,
+    "sports": 46,
+    "india": 93,
     "entertainment": 60,
+    "gaming": 54,
+    "science": 50,
+    "music": 45,
     "tech": 70,
-    "business": 50,
-    "music": 43
+    "business": 50
   },
   "sources": [
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 9,
+      "articles": 10,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 24,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 18,
+      "articles": 19,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 21,
       "error": null
     },
     {
@@ -276,7 +276,7 @@
       "category": "gaming",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 25,
       "error": null
     },
     {
@@ -354,10 +354,10 @@
       "name": "ScienceDaily (All)",
       "url": "https://www.sciencedaily.com/rss/all.xml",
       "category": "science",
-      "ok": false,
+      "ok": true,
       "http_status": 200,
-      "articles": 0,
-      "error": "ValueError: feed is not well-formed XML even after cleanup: junk after document element: line 440, column 46"
+      "articles": 25,
+      "error": null
     },
     {
       "slug": "phys-org",
@@ -452,16 +452,6 @@
       "error": "ValueError: response body is empty -- upstream sent no feed (bot mitigation returns a 2xx with zero bytes)"
     },
     {
-      "slug": "sciencedaily",
-      "name": "ScienceDaily (All)",
-      "url": "https://www.sciencedaily.com/rss/all.xml",
-      "category": "science",
-      "ok": false,
-      "http_status": 200,
-      "articles": 0,
-      "error": "ValueError: feed is not well-formed XML even after cleanup: junk after document element: line 440, column 46"
-    },
-    {
       "slug": "indian-express-ent",
       "name": "The Indian Express (Entertainment)",
       "url": "https://indianexpress.com/section/entertainment/feed/",
@@ -475,26 +465,30 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 38
+      "count": 43
     },
     {
-      "word": "games",
-      "count": 19
-    },
-    {
-      "word": "france",
-      "count": 15
+      "word": "show",
+      "count": 16
     },
     {
       "word": "game",
       "count": 15
     },
     {
-      "word": "music",
+      "word": "protests",
+      "count": 15
+    },
+    {
+      "word": "france",
       "count": 14
     },
     {
-      "word": "film",
+      "word": "scientists",
+      "count": 14
+    },
+    {
+      "word": "attack",
       "count": 13
     },
     {
@@ -502,7 +496,7 @@
       "count": 13
     },
     {
-      "word": "million",
+      "word": "back",
       "count": 12
     },
     {
@@ -510,38 +504,27 @@
       "count": 12
     },
     {
-      "word": "world",
-      "count": 12
-    },
-    {
-      "word": "attack",
-      "count": 11
-    },
-    {
-      "word": "back",
-      "count": 11
-    },
-    {
-      "word": "series",
-      "count": 11
-    },
-    {
-      "word": "launches",
+      "word": "exclusive",
       "count": 10
     },
     {
-      "word": "star",
+      "word": "french",
+      "count": 10
+    },
+    {
+      "word": "gaming",
+      "count": 10
+    },
+    {
+      "word": "release",
+      "count": 10
+    },
+    {
+      "word": "trump",
       "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-14T07:30:02.662160+00:00",
-      "duration_seconds": 12.94,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 637
-    },
     {
       "last_run": "2026-10-14T13:38:12.761568+00:00",
       "duration_seconds": 12.21,
@@ -744,6 +727,13 @@
       "feeds_ok": 32,
       "feeds_failed": 6,
       "articles": 616
+    },
+    {
+      "last_run": "2026-10-20T16:52:23.616756+00:00",
+      "duration_seconds": 15.09,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 644
     }
   ]
 }
