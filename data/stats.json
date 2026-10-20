@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-20T16:52:23.616756+00:00",
-  "duration_seconds": 15.09,
+  "last_run": "2026-10-20T21:32:36.562160+00:00",
+  "duration_seconds": 15.68,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 644
+    "articles": 639
   },
   "categories": {
-    "world": 134,
-    "movies": 42,
-    "sports": 46,
-    "india": 93,
-    "entertainment": 60,
-    "gaming": 54,
     "science": 50,
     "music": 45,
+    "movies": 42,
+    "gaming": 54,
+    "world": 133,
+    "india": 92,
     "tech": 70,
-    "business": 50
+    "entertainment": 59,
+    "business": 50,
+    "sports": 44
   },
   "sources": [
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 23,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 23,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 19,
       "error": null
     },
     {
@@ -406,7 +406,7 @@
       "category": "entertainment",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     }
   ],
@@ -465,18 +465,18 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 43
+      "count": 42
     },
     {
-      "word": "show",
-      "count": 16
+      "word": "trump",
+      "count": 19
     },
     {
       "word": "game",
-      "count": 15
+      "count": 18
     },
     {
-      "word": "protests",
+      "word": "police",
       "count": 15
     },
     {
@@ -484,54 +484,47 @@
       "count": 14
     },
     {
-      "word": "scientists",
+      "word": "netflix",
       "count": 14
     },
     {
-      "word": "attack",
+      "word": "gaming",
       "count": 13
+    },
+    {
+      "word": "xbox",
+      "count": 13
+    },
+    {
+      "word": "attack",
+      "count": 12
+    },
+    {
+      "word": "music",
+      "count": 12
+    },
+    {
+      "word": "scientists",
+      "count": 12
     },
     {
       "word": "years",
-      "count": 13
-    },
-    {
-      "word": "back",
       "count": 12
     },
     {
-      "word": "officially",
-      "count": 12
+      "word": "ahead",
+      "count": 11
     },
     {
-      "word": "exclusive",
-      "count": 10
+      "word": "series",
+      "count": 11
     },
     {
-      "word": "french",
-      "count": 10
-    },
-    {
-      "word": "gaming",
-      "count": 10
-    },
-    {
-      "word": "release",
-      "count": 10
-    },
-    {
-      "word": "trump",
-      "count": 10
+      "word": "star",
+      "count": 11
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-14T13:38:12.761568+00:00",
-      "duration_seconds": 12.21,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 643
-    },
     {
       "last_run": "2026-10-14T18:32:03.176643+00:00",
       "duration_seconds": 17.26,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 644
+    },
+    {
+      "last_run": "2026-10-20T21:32:36.562160+00:00",
+      "duration_seconds": 15.68,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 639
     }
   ]
 }
