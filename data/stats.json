@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-20T21:32:36.562160+00:00",
-  "duration_seconds": 15.68,
+  "last_run": "2026-10-21T00:33:39.267340+00:00",
+  "duration_seconds": 11.03,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,17 +14,17 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 639
+    "articles": 642
   },
   "categories": {
-    "science": 50,
-    "music": 45,
+    "entertainment": 60,
     "movies": 42,
-    "gaming": 54,
+    "music": 44,
+    "science": 50,
     "world": 133,
-    "india": 92,
     "tech": 70,
-    "entertainment": 59,
+    "india": 94,
+    "gaming": 55,
     "business": 50,
     "sports": 44
   },
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 25,
       "error": null
     },
     {
@@ -276,7 +276,7 @@
       "category": "gaming",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -406,7 +406,7 @@
       "category": "entertainment",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     }
   ],
@@ -465,42 +465,46 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 42
+      "count": 37
     },
     {
       "word": "trump",
-      "count": 19
+      "count": 23
     },
     {
       "word": "game",
-      "count": 18
+      "count": 16
+    },
+    {
+      "word": "netflix",
+      "count": 16
     },
     {
       "word": "police",
       "count": 15
     },
     {
-      "word": "france",
+      "word": "film",
       "count": 14
     },
     {
-      "word": "netflix",
+      "word": "ukraine",
       "count": 14
-    },
-    {
-      "word": "gaming",
-      "count": 13
-    },
-    {
-      "word": "xbox",
-      "count": 13
-    },
-    {
-      "word": "attack",
-      "count": 12
     },
     {
       "word": "music",
+      "count": 13
+    },
+    {
+      "word": "officially",
+      "count": 13
+    },
+    {
+      "word": "ahead",
+      "count": 12
+    },
+    {
+      "word": "million",
       "count": 12
     },
     {
@@ -508,30 +512,19 @@
       "count": 12
     },
     {
-      "word": "years",
+      "word": "series",
       "count": 12
     },
     {
-      "word": "ahead",
+      "word": "attack",
       "count": 11
     },
     {
-      "word": "series",
-      "count": 11
-    },
-    {
-      "word": "star",
+      "word": "games",
       "count": 11
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-14T18:32:03.176643+00:00",
-      "duration_seconds": 17.26,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 645
-    },
     {
       "last_run": "2026-10-14T23:09:35.947011+00:00",
       "duration_seconds": 54.83,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 639
+    },
+    {
+      "last_run": "2026-10-21T00:33:39.267340+00:00",
+      "duration_seconds": 11.03,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 642
     }
   ]
 }
