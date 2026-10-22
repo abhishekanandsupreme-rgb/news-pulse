@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-21T23:13:15.598524+00:00",
-  "duration_seconds": 13.62,
+  "last_run": "2026-10-22T04:32:15.666639+00:00",
+  "duration_seconds": 19.82,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -17,16 +17,16 @@
     "articles": 639
   },
   "categories": {
-    "world": 133,
-    "science": 50,
-    "music": 43,
     "movies": 42,
+    "india": 88,
+    "business": 49,
     "entertainment": 60,
-    "gaming": 54,
-    "tech": 69,
-    "india": 90,
+    "world": 133,
+    "gaming": 55,
+    "music": 44,
+    "science": 50,
     "sports": 48,
-    "business": 50
+    "tech": 70
   },
   "sources": [
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 20,
       "error": null
     },
     {
@@ -176,7 +176,7 @@
       "category": "tech",
       "ok": true,
       "http_status": 200,
-      "articles": 19,
+      "articles": 20,
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -276,7 +276,7 @@
       "category": "gaming",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 24,
       "error": null
     },
     {
@@ -469,69 +469,62 @@
     },
     {
       "word": "trump",
-      "count": 22
-    },
-    {
-      "word": "star",
-      "count": 17
-    },
-    {
-      "word": "meta",
-      "count": 15
-    },
-    {
-      "word": "series",
-      "count": 14
+      "count": 30
     },
     {
       "word": "release",
-      "count": 13
+      "count": 15
     },
     {
-      "word": "ukraine",
-      "count": 13
+      "word": "today",
+      "count": 15
     },
     {
-      "word": "gaming",
-      "count": 12
+      "word": "meta",
+      "count": 14
+    },
+    {
+      "word": "october",
+      "count": 14
     },
     {
       "word": "show",
-      "count": 12
+      "count": 14
+    },
+    {
+      "word": "attack",
+      "count": 13
     },
     {
       "word": "bioware",
-      "count": 11
+      "count": 13
     },
     {
-      "word": "film",
-      "count": 11
-    },
-    {
-      "word": "game",
-      "count": 11
+      "word": "court",
+      "count": 12
     },
     {
       "word": "music",
-      "count": 11
+      "count": 12
     },
     {
-      "word": "officially",
-      "count": 11
+      "word": "star",
+      "count": 12
     },
     {
-      "word": "protests",
+      "word": "ukraine",
+      "count": 12
+    },
+    {
+      "word": "world",
+      "count": 12
+    },
+    {
+      "word": "france",
       "count": 11
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-15T21:17:37.648821+00:00",
-      "duration_seconds": 14.4,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 637
-    },
     {
       "last_run": "2026-10-16T00:18:50.640572+00:00",
       "duration_seconds": 11.4,
@@ -731,6 +724,13 @@
     {
       "last_run": "2026-10-21T23:13:15.598524+00:00",
       "duration_seconds": 13.62,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 639
+    },
+    {
+      "last_run": "2026-10-22T04:32:15.666639+00:00",
+      "duration_seconds": 19.82,
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 639
