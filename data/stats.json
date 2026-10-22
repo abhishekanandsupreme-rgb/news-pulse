@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-22T17:04:25.477153+00:00",
-  "duration_seconds": 9.6,
+  "last_run": "2026-10-22T21:29:11.276352+00:00",
+  "duration_seconds": 11.66,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 640
+    "articles": 639
   },
   "categories": {
     "movies": 42,
-    "world": 133,
-    "science": 50,
-    "gaming": 54,
-    "entertainment": 60,
     "music": 45,
-    "sports": 47,
-    "india": 90,
-    "tech": 70,
-    "business": 49
+    "sports": 46,
+    "science": 50,
+    "entertainment": 60,
+    "world": 134,
+    "gaming": 54,
+    "india": 89,
+    "tech": 69,
+    "business": 50
   },
   "sources": [
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 24,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -176,7 +176,7 @@
       "category": "tech",
       "ok": true,
       "http_status": 200,
-      "articles": 20,
+      "articles": 19,
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 21,
       "error": null
     },
     {
@@ -465,26 +465,26 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 37
+      "count": 32
     },
     {
-      "word": "game",
+      "word": "world",
       "count": 17
     },
     {
-      "word": "bioware",
-      "count": 16
-    },
-    {
-      "word": "france",
-      "count": 15
-    },
-    {
-      "word": "series",
+      "word": "game",
       "count": 14
     },
     {
       "word": "south",
+      "count": 14
+    },
+    {
+      "word": "life",
+      "count": 13
+    },
+    {
+      "word": "time",
       "count": 13
     },
     {
@@ -492,15 +492,23 @@
       "count": 13
     },
     {
-      "word": "year",
+      "word": "gaming",
       "count": 12
     },
     {
       "word": "human",
-      "count": 11
+      "count": 12
     },
     {
-      "word": "music",
+      "word": "next",
+      "count": 12
+    },
+    {
+      "word": "star",
+      "count": 12
+    },
+    {
+      "word": "france",
       "count": 11
     },
     {
@@ -508,30 +516,15 @@
       "count": 11
     },
     {
-      "word": "star",
+      "word": "scientists",
       "count": 11
     },
     {
-      "word": "world",
+      "word": "years",
       "count": 11
-    },
-    {
-      "word": "ahead",
-      "count": 10
-    },
-    {
-      "word": "court",
-      "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-16T13:12:10.326904+00:00",
-      "duration_seconds": 14.92,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 639
-    },
     {
       "last_run": "2026-10-16T17:58:16.187200+00:00",
       "duration_seconds": 11.76,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 640
+    },
+    {
+      "last_run": "2026-10-22T21:29:11.276352+00:00",
+      "duration_seconds": 11.66,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 639
     }
   ]
 }
