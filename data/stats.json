@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-22T21:29:11.276352+00:00",
-  "duration_seconds": 11.66,
+  "last_run": "2026-10-23T00:35:18.470424+00:00",
+  "duration_seconds": 13.48,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 639
+    "articles": 640
   },
   "categories": {
     "movies": 42,
-    "music": 45,
-    "sports": 46,
-    "science": 50,
     "entertainment": 60,
     "world": 134,
+    "music": 43,
+    "science": 50,
+    "sports": 48,
+    "tech": 70,
     "gaming": 54,
-    "india": 89,
-    "tech": 69,
-    "business": 50
+    "india": 90,
+    "business": 49
   },
   "sources": [
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -176,7 +176,7 @@
       "category": "tech",
       "ok": true,
       "http_status": 200,
-      "articles": 19,
+      "articles": 20,
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 23,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 23,
       "error": null
     },
     {
@@ -465,50 +465,46 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 32
-    },
-    {
-      "word": "world",
-      "count": 17
-    },
-    {
-      "word": "game",
-      "count": 14
-    },
-    {
-      "word": "south",
-      "count": 14
-    },
-    {
-      "word": "life",
-      "count": 13
-    },
-    {
-      "word": "time",
-      "count": 13
+      "count": 34
     },
     {
       "word": "trump",
+      "count": 19
+    },
+    {
+      "word": "game",
+      "count": 18
+    },
+    {
+      "word": "court",
       "count": 13
     },
     {
-      "word": "gaming",
+      "word": "music",
+      "count": 13
+    },
+    {
+      "word": "life",
       "count": 12
     },
     {
-      "word": "human",
+      "word": "series",
       "count": 12
     },
     {
-      "word": "next",
+      "word": "south",
       "count": 12
     },
     {
-      "word": "star",
+      "word": "time",
       "count": 12
     },
     {
       "word": "france",
+      "count": 11
+    },
+    {
+      "word": "movie",
       "count": 11
     },
     {
@@ -520,18 +516,15 @@
       "count": 11
     },
     {
-      "word": "years",
+      "word": "world",
       "count": 11
+    },
+    {
+      "word": "australia",
+      "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-16T17:58:16.187200+00:00",
-      "duration_seconds": 11.76,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 639
-    },
     {
       "last_run": "2026-10-16T20:58:55.423235+00:00",
       "duration_seconds": 12.1,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 639
+    },
+    {
+      "last_run": "2026-10-23T00:35:18.470424+00:00",
+      "duration_seconds": 13.48,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 640
     }
   ]
 }
