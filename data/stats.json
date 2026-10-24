@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-24T18:44:47.734081+00:00",
-  "duration_seconds": 12.56,
+  "last_run": "2026-10-24T22:25:13.491076+00:00",
+  "duration_seconds": 13.51,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 637
+    "articles": 635
   },
   "categories": {
-    "movies": 42,
-    "world": 129,
-    "entertainment": 60,
-    "india": 90,
-    "tech": 70,
-    "music": 44,
     "gaming": 55,
+    "entertainment": 60,
+    "movies": 42,
+    "india": 90,
+    "world": 129,
+    "tech": 70,
     "sports": 47,
     "science": 50,
-    "business": 50
+    "music": 44,
+    "business": 48
   },
   "sources": [
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 23,
       "error": null
     },
     {
@@ -465,14 +465,14 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 32
-    },
-    {
-      "word": "france",
-      "count": 17
+      "count": 33
     },
     {
       "word": "protests",
+      "count": 17
+    },
+    {
+      "word": "france",
       "count": 16
     },
     {
@@ -480,27 +480,27 @@
       "count": 16
     },
     {
+      "word": "ukraine",
+      "count": 15
+    },
+    {
       "word": "game",
       "count": 14
     },
     {
-      "word": "time",
+      "word": "scientists",
       "count": 14
-    },
-    {
-      "word": "attack",
-      "count": 13
-    },
-    {
-      "word": "games",
-      "count": 13
     },
     {
       "word": "ahead",
       "count": 12
     },
     {
-      "word": "scientists",
+      "word": "attack",
+      "count": 12
+    },
+    {
+      "word": "thousands",
       "count": 12
     },
     {
@@ -508,15 +508,15 @@
       "count": 12
     },
     {
-      "word": "ukraine",
-      "count": 12
-    },
-    {
-      "word": "music",
+      "word": "games",
       "count": 11
     },
     {
-      "word": "police",
+      "word": "officially",
+      "count": 11
+    },
+    {
+      "word": "paris",
       "count": 11
     },
     {
@@ -525,13 +525,6 @@
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-18T10:55:31.401967+00:00",
-      "duration_seconds": 17.9,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 631
-    },
     {
       "last_run": "2026-10-18T15:47:00.186024+00:00",
       "duration_seconds": 18.96,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 637
+    },
+    {
+      "last_run": "2026-10-24T22:25:13.491076+00:00",
+      "duration_seconds": 13.51,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 635
     }
   ]
 }
