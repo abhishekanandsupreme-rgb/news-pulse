@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-25T11:15:19.334609+00:00",
-  "duration_seconds": 14.19,
+  "last_run": "2026-10-25T16:03:57.983514+00:00",
+  "duration_seconds": 7.27,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 632
+    "articles": 635
   },
   "categories": {
-    "sports": 46,
-    "india": 90,
-    "world": 129,
-    "movies": 42,
     "gaming": 55,
+    "movies": 42,
     "entertainment": 60,
     "science": 50,
+    "india": 90,
+    "sports": 46,
+    "world": 131,
+    "music": 43,
     "tech": 70,
-    "music": 41,
-    "business": 49
+    "business": 48
   },
   "sources": [
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 6,
+      "articles": 7,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 24,
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 23,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 23,
       "error": null
     },
     {
@@ -465,73 +465,66 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 29
-    },
-    {
-      "word": "protests",
-      "count": 21
-    },
-    {
-      "word": "france",
-      "count": 18
+      "count": 32
     },
     {
       "word": "game",
-      "count": 16
+      "count": 19
     },
     {
       "word": "trump",
-      "count": 16
+      "count": 17
     },
     {
       "word": "years",
-      "count": 16
-    },
-    {
-      "word": "ukraine",
       "count": 15
     },
     {
-      "word": "election",
+      "word": "france",
       "count": 14
     },
     {
-      "word": "ahead",
+      "word": "election",
       "count": 13
     },
     {
-      "word": "scientists",
-      "count": 13
-    },
-    {
-      "word": "week",
-      "count": 13
-    },
-    {
-      "word": "across",
+      "word": "ukraine",
       "count": 12
+    },
+    {
+      "word": "protests",
+      "count": 11
     },
     {
       "word": "series",
-      "count": 12
+      "count": 11
     },
     {
-      "word": "free",
-      "count": 11
+      "word": "across",
+      "count": 10
     },
     {
       "word": "games",
-      "count": 11
+      "count": 10
+    },
+    {
+      "word": "gaming",
+      "count": 10
+    },
+    {
+      "word": "office",
+      "count": 10
+    },
+    {
+      "word": "officially",
+      "count": 10
+    },
+    {
+      "word": "presidential",
+      "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-18T22:23:13.579511+00:00",
-      "duration_seconds": 8.22,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 637
-    },
     {
       "last_run": "2026-10-19T04:30:44.047287+00:00",
       "duration_seconds": 13.01,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 632
+    },
+    {
+      "last_run": "2026-10-25T16:03:57.983514+00:00",
+      "duration_seconds": 7.27,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 635
     }
   ]
 }
