@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-26T12:49:15.321861+00:00",
-  "duration_seconds": 7.61,
+  "last_run": "2026-10-26T19:52:24.241104+00:00",
+  "duration_seconds": 14.48,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 634
+    "articles": 636
   },
   "categories": {
-    "movies": 42,
-    "world": 131,
-    "science": 50,
+    "music": 42,
+    "world": 134,
     "india": 86,
+    "movies": 42,
     "entertainment": 60,
-    "music": 45,
-    "sports": 45,
-    "business": 50,
-    "gaming": 55,
-    "tech": 70
+    "science": 50,
+    "tech": 70,
+    "gaming": 54,
+    "sports": 48,
+    "business": 50
   },
   "sources": [
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 7,
+      "articles": 10,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 15,
+      "articles": 16,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 20,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 20,
+      "articles": 23,
       "error": null
     },
     {
@@ -276,7 +276,7 @@
       "category": "gaming",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 22,
       "error": null
     },
     {
@@ -465,73 +465,66 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 35
+      "count": 31
     },
     {
       "word": "election",
-      "count": 20
+      "count": 22
     },
     {
       "word": "lula",
       "count": 20
     },
     {
-      "word": "game",
-      "count": 19
-    },
-    {
-      "word": "years",
-      "count": 19
-    },
-    {
-      "word": "trump",
-      "count": 16
+      "word": "series",
+      "count": 20
     },
     {
       "word": "brazil",
+      "count": 18
+    },
+    {
+      "word": "anthropic",
       "count": 15
     },
     {
-      "word": "film",
-      "count": 12
+      "word": "game",
+      "count": 15
+    },
+    {
+      "word": "trump",
+      "count": 15
+    },
+    {
+      "word": "officially",
+      "count": 14
+    },
+    {
+      "word": "years",
+      "count": 14
     },
     {
       "word": "october",
+      "count": 13
+    },
+    {
+      "word": "ahead",
       "count": 12
     },
     {
-      "word": "series",
-      "count": 12
-    },
-    {
-      "word": "bolsonaro",
+      "word": "time",
       "count": 11
     },
     {
       "word": "crore",
-      "count": 11
+      "count": 10
     },
     {
-      "word": "indian",
-      "count": 11
-    },
-    {
-      "word": "next",
-      "count": 11
-    },
-    {
-      "word": "gaming",
+      "word": "deal",
       "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-20T04:40:01.520291+00:00",
-      "duration_seconds": 11.32,
-      "feeds_ok": 32,
-      "feeds_failed": 6,
-      "articles": 617
-    },
     {
       "last_run": "2026-10-20T11:25:49.554704+00:00",
       "duration_seconds": 14.11,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 634
+    },
+    {
+      "last_run": "2026-10-26T19:52:24.241104+00:00",
+      "duration_seconds": 14.48,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 636
     }
   ]
 }
