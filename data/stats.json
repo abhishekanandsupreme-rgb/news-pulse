@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-27T04:53:15.475069+00:00",
-  "duration_seconds": 7.81,
+  "last_run": "2026-10-27T12:01:41.888151+00:00",
+  "duration_seconds": 15.73,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 638
+    "articles": 639
   },
   "categories": {
-    "gaming": 55,
     "movies": 42,
-    "world": 133,
-    "india": 89,
     "entertainment": 60,
-    "business": 50,
-    "music": 43,
     "science": 50,
+    "world": 133,
+    "india": 91,
+    "business": 50,
+    "music": 41,
+    "sports": 47,
     "tech": 70,
-    "sports": 46
+    "gaming": 55
   },
   "sources": [
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 24,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 22,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 21,
       "error": null
     },
     {
@@ -465,73 +465,66 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 31
-    },
-    {
-      "word": "trump",
-      "count": 27
-    },
-    {
-      "word": "game",
-      "count": 22
-    },
-    {
-      "word": "election",
-      "count": 21
+      "count": 44
     },
     {
       "word": "years",
-      "count": 20
-    },
-    {
-      "word": "brazil",
-      "count": 19
-    },
-    {
-      "word": "lula",
-      "count": 16
+      "count": 18
     },
     {
       "word": "world",
-      "count": 13
+      "count": 17
     },
     {
-      "word": "year",
-      "count": 13
+      "word": "election",
+      "count": 16
     },
     {
-      "word": "music",
-      "count": 12
+      "word": "game",
+      "count": 16
     },
     {
       "word": "series",
-      "count": 12
+      "count": 15
     },
     {
-      "word": "anthropic",
-      "count": 11
-    },
-    {
-      "word": "apple",
-      "count": 11
-    },
-    {
-      "word": "israel",
-      "count": 11
+      "word": "gaming",
+      "count": 13
     },
     {
       "word": "october",
+      "count": 13
+    },
+    {
+      "word": "trump",
+      "count": 13
+    },
+    {
+      "word": "harry",
+      "count": 12
+    },
+    {
+      "word": "attack",
       "count": 11
+    },
+    {
+      "word": "brazil",
+      "count": 11
+    },
+    {
+      "word": "time",
+      "count": 11
+    },
+    {
+      "word": "ahead",
+      "count": 10
+    },
+    {
+      "word": "apple",
+      "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-20T21:32:36.562160+00:00",
-      "duration_seconds": 15.68,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 639
-    },
     {
       "last_run": "2026-10-21T00:33:39.267340+00:00",
       "duration_seconds": 11.03,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 638
+    },
+    {
+      "last_run": "2026-10-27T12:01:41.888151+00:00",
+      "duration_seconds": 15.73,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 639
     }
   ]
 }
