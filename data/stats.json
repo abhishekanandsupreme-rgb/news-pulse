@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-27T22:07:11.229457+00:00",
-  "duration_seconds": 20.45,
+  "last_run": "2026-10-28T01:18:01.824930+00:00",
+  "duration_seconds": 14.29,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -17,16 +17,16 @@
     "articles": 637
   },
   "categories": {
+    "tech": 70,
+    "entertainment": 60,
+    "world": 128,
     "movies": 42,
+    "business": 50,
     "gaming": 55,
     "science": 50,
-    "entertainment": 60,
-    "music": 41,
-    "world": 130,
-    "tech": 70,
     "india": 92,
-    "sports": 47,
-    "business": 50
+    "music": 44,
+    "sports": 46
   },
   "sources": [
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 9,
+      "articles": 7,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 21,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 24,
       "error": null
     },
     {
@@ -465,26 +465,26 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 35
-    },
-    {
-      "word": "election",
-      "count": 19
-    },
-    {
-      "word": "trump",
-      "count": 19
-    },
-    {
-      "word": "world",
-      "count": 17
-    },
-    {
-      "word": "year",
-      "count": 17
+      "count": 36
     },
     {
       "word": "israel",
+      "count": 23
+    },
+    {
+      "word": "election",
+      "count": 22
+    },
+    {
+      "word": "world",
+      "count": 18
+    },
+    {
+      "word": "trump",
+      "count": 16
+    },
+    {
+      "word": "years",
       "count": 16
     },
     {
@@ -492,46 +492,39 @@
       "count": 15
     },
     {
-      "word": "officially",
-      "count": 13
+      "word": "game",
+      "count": 14
     },
     {
-      "word": "show",
-      "count": 13
+      "word": "year",
+      "count": 14
     },
     {
-      "word": "years",
+      "word": "netanyahu",
       "count": 13
     },
     {
       "word": "october",
+      "count": 13
+    },
+    {
+      "word": "apple",
       "count": 12
     },
     {
-      "word": "ahead",
-      "count": 11
-    },
-    {
       "word": "brazil",
-      "count": 11
+      "count": 12
     },
     {
-      "word": "game",
-      "count": 11
+      "word": "show",
+      "count": 12
     },
     {
-      "word": "israeli",
+      "word": "china",
       "count": 11
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-21T13:42:41.513912+00:00",
-      "duration_seconds": 21.16,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 643
-    },
     {
       "last_run": "2026-10-21T18:33:40.610970+00:00",
       "duration_seconds": 15.47,
@@ -731,6 +724,13 @@
     {
       "last_run": "2026-10-27T22:07:11.229457+00:00",
       "duration_seconds": 20.45,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 637
+    },
+    {
+      "last_run": "2026-10-28T01:18:01.824930+00:00",
+      "duration_seconds": 14.29,
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 637
