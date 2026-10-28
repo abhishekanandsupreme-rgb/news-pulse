@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-28T16:34:55.123429+00:00",
-  "duration_seconds": 17.97,
+  "last_run": "2026-10-28T22:29:57.417219+00:00",
+  "duration_seconds": 10.19,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 635
+    "articles": 638
   },
   "categories": {
-    "entertainment": 60,
-    "world": 126,
+    "world": 131,
     "movies": 42,
-    "india": 92,
-    "business": 49,
-    "gaming": 55,
-    "tech": 69,
-    "science": 50,
     "music": 45,
-    "sports": 47
+    "entertainment": 60,
+    "science": 50,
+    "india": 91,
+    "tech": 69,
+    "gaming": 55,
+    "business": 50,
+    "sports": 45
   },
   "sources": [
     {
@@ -36,7 +36,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 20,
+      "articles": 25,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 20,
       "error": null
     },
     {
@@ -465,73 +465,66 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 40
+      "count": 31
     },
     {
       "word": "election",
-      "count": 24
-    },
-    {
-      "word": "train",
       "count": 19
     },
     {
-      "word": "spain",
-      "count": 18
-    },
-    {
-      "word": "china",
-      "count": 17
-    },
-    {
-      "word": "games",
-      "count": 17
-    },
-    {
       "word": "year",
-      "count": 17
-    },
-    {
-      "word": "crore",
       "count": 16
     },
     {
-      "word": "israeli",
+      "word": "israel",
+      "count": 15
+    },
+    {
+      "word": "spain",
+      "count": 15
+    },
+    {
+      "word": "train",
       "count": 14
     },
     {
-      "word": "brazil",
+      "word": "bolsonaro",
       "count": 13
     },
     {
-      "word": "crash",
+      "word": "crore",
       "count": 13
     },
     {
-      "word": "dead",
+      "word": "high",
       "count": 13
     },
     {
-      "word": "game",
+      "word": "indian",
       "count": 13
     },
     {
-      "word": "series",
+      "word": "trump",
       "count": 13
     },
     {
       "word": "years",
       "count": 13
+    },
+    {
+      "word": "apple",
+      "count": 12
+    },
+    {
+      "word": "china",
+      "count": 12
+    },
+    {
+      "word": "dead",
+      "count": 12
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-22T04:32:15.666639+00:00",
-      "duration_seconds": 19.82,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 639
-    },
     {
       "last_run": "2026-10-22T11:41:08.089465+00:00",
       "duration_seconds": 6.45,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 635
+    },
+    {
+      "last_run": "2026-10-28T22:29:57.417219+00:00",
+      "duration_seconds": 10.19,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 638
     }
   ]
 }
