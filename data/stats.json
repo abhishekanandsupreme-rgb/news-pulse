@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-29T19:33:22.563070+00:00",
-  "duration_seconds": 8.2,
+  "last_run": "2026-10-29T23:54:19.107052+00:00",
+  "duration_seconds": 6.99,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 638
+    "articles": 639
   },
   "categories": {
-    "entertainment": 60,
+    "music": 42,
     "movies": 42,
+    "tech": 70,
+    "entertainment": 60,
     "science": 50,
+    "world": 132,
+    "gaming": 54,
     "india": 92,
-    "tech": 69,
-    "music": 44,
-    "world": 133,
-    "gaming": 53,
-    "sports": 46,
-    "business": 49
+    "business": 50,
+    "sports": 47
   },
   "sources": [
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 23,
       "error": null
     },
     {
@@ -176,7 +176,7 @@
       "category": "tech",
       "ok": true,
       "http_status": 200,
-      "articles": 19,
+      "articles": 20,
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 22,
       "error": null
     },
     {
@@ -276,7 +276,7 @@
       "category": "gaming",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 24,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 22,
       "error": null
     },
     {
@@ -465,54 +465,46 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 33
+      "count": 31
     },
     {
-      "word": "train",
-      "count": 18
+      "word": "patrick",
+      "count": 20
     },
     {
-      "word": "election",
-      "count": 16
+      "word": "stewart",
+      "count": 20
     },
     {
-      "word": "china",
-      "count": 14
-    },
-    {
-      "word": "officially",
-      "count": 14
-    },
-    {
-      "word": "years",
-      "count": 14
-    },
-    {
-      "word": "google",
-      "count": 13
-    },
-    {
-      "word": "back",
-      "count": 12
+      "word": "star",
+      "count": 19
     },
     {
       "word": "game",
-      "count": 12
-    },
-    {
-      "word": "ahead",
-      "count": 11
-    },
-    {
-      "word": "gaming",
-      "count": 11
-    },
-    {
-      "word": "spain",
-      "count": 11
+      "count": 18
     },
     {
       "word": "trump",
+      "count": 15
+    },
+    {
+      "word": "train",
+      "count": 14
+    },
+    {
+      "word": "election",
+      "count": 12
+    },
+    {
+      "word": "kapoor",
+      "count": 11
+    },
+    {
+      "word": "people",
+      "count": 11
+    },
+    {
+      "word": "reveals",
       "count": 11
     },
     {
@@ -520,18 +512,19 @@
       "count": 11
     },
     {
-      "word": "crash",
+      "word": "ahead",
+      "count": 10
+    },
+    {
+      "word": "china",
+      "count": 10
+    },
+    {
+      "word": "officially",
       "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-23T00:35:18.470424+00:00",
-      "duration_seconds": 13.48,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 640
-    },
     {
       "last_run": "2026-10-23T07:25:19.887026+00:00",
       "duration_seconds": 16.0,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 638
+    },
+    {
+      "last_run": "2026-10-29T23:54:19.107052+00:00",
+      "duration_seconds": 6.99,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 639
     }
   ]
 }
