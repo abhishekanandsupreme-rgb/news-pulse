@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-30T05:35:54.929068+00:00",
-  "duration_seconds": 5.96,
+  "last_run": "2026-10-30T12:42:45.346975+00:00",
+  "duration_seconds": 13.74,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -12,21 +12,21 @@
   },
   "totals": {
     "feeds": 38,
-    "feeds_ok": 33,
-    "feeds_failed": 5,
-    "articles": 639
+    "feeds_ok": 32,
+    "feeds_failed": 6,
+    "articles": 620
   },
   "categories": {
-    "india": 92,
-    "world": 131,
-    "movies": 42,
-    "sports": 47,
-    "business": 50,
-    "science": 50,
     "entertainment": 60,
-    "gaming": 55,
-    "music": 42,
-    "tech": 70
+    "movies": 42,
+    "science": 25,
+    "india": 93,
+    "world": 133,
+    "music": 43,
+    "sports": 49,
+    "business": 50,
+    "tech": 70,
+    "gaming": 55
   },
   "sources": [
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 8,
+      "articles": 9,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 24,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 18,
+      "articles": 19,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 24,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 23,
       "error": null
     },
     {
@@ -354,10 +354,10 @@
       "name": "ScienceDaily (All)",
       "url": "https://www.sciencedaily.com/rss/all.xml",
       "category": "science",
-      "ok": true,
+      "ok": false,
       "http_status": 200,
-      "articles": 25,
-      "error": null
+      "articles": 0,
+      "error": "ValueError: feed is not well-formed XML even after cleanup: junk after document element: line 440, column 46"
     },
     {
       "slug": "phys-org",
@@ -452,6 +452,16 @@
       "error": "ValueError: response body is empty -- upstream sent no feed (bot mitigation returns a 2xx with zero bytes)"
     },
     {
+      "slug": "sciencedaily",
+      "name": "ScienceDaily (All)",
+      "url": "https://www.sciencedaily.com/rss/all.xml",
+      "category": "science",
+      "ok": false,
+      "http_status": 200,
+      "articles": 0,
+      "error": "ValueError: feed is not well-formed XML even after cleanup: junk after document element: line 440, column 46"
+    },
+    {
       "slug": "indian-express-ent",
       "name": "The Indian Express (Entertainment)",
       "url": "https://indianexpress.com/section/entertainment/feed/",
@@ -468,70 +478,63 @@
       "count": 37
     },
     {
-      "word": "patrick",
-      "count": 21
-    },
-    {
-      "word": "trump",
-      "count": 21
-    },
-    {
       "word": "game",
-      "count": 20
-    },
-    {
-      "word": "stewart",
-      "count": 20
+      "count": 17
     },
     {
       "word": "star",
       "count": 15
     },
     {
-      "word": "series",
+      "word": "election",
       "count": 14
     },
     {
-      "word": "reveals",
+      "word": "film",
+      "count": 14
+    },
+    {
+      "word": "patrick",
+      "count": 14
+    },
+    {
+      "word": "stewart",
+      "count": 13
+    },
+    {
+      "word": "years",
       "count": 12
     },
     {
-      "word": "china",
-      "count": 11
-    },
-    {
-      "word": "election",
-      "count": 11
-    },
-    {
-      "word": "train",
-      "count": 11
-    },
-    {
-      "word": "world",
-      "count": 11
-    },
-    {
-      "word": "year",
-      "count": 11
-    },
-    {
       "word": "games",
+      "count": 11
+    },
+    {
+      "word": "israel",
+      "count": 11
+    },
+    {
+      "word": "october",
+      "count": 11
+    },
+    {
+      "word": "court",
       "count": 10
     },
     {
-      "word": "scientists",
+      "word": "indian",
+      "count": 10
+    },
+    {
+      "word": "official",
+      "count": 10
+    },
+    {
+      "word": "people",
       "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-23T13:20:02.760614+00:00",
-      "duration_seconds": 8.8,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 639
-    },
     {
       "last_run": "2026-10-23T18:15:31.745153+00:00",
       "duration_seconds": 15.47,
@@ -734,6 +737,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 639
+    },
+    {
+      "last_run": "2026-10-30T12:42:45.346975+00:00",
+      "duration_seconds": 13.74,
+      "feeds_ok": 32,
+      "feeds_failed": 6,
+      "articles": 620
     }
   ]
 }
