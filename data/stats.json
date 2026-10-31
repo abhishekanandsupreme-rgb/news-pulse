@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-31T12:14:18.685717+00:00",
-  "duration_seconds": 10.09,
+  "last_run": "2026-10-31T18:28:20.575432+00:00",
+  "duration_seconds": 8.04,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -12,21 +12,21 @@
   },
   "totals": {
     "feeds": 38,
-    "feeds_ok": 32,
-    "feeds_failed": 6,
-    "articles": 617
+    "feeds_ok": 33,
+    "feeds_failed": 5,
+    "articles": 639
   },
   "categories": {
-    "india": 94,
-    "world": 131,
-    "tech": 70,
-    "entertainment": 60,
     "movies": 42,
-    "gaming": 55,
-    "science": 25,
-    "sports": 48,
-    "business": 48,
-    "music": 44
+    "entertainment": 60,
+    "world": 131,
+    "india": 93,
+    "sports": 46,
+    "gaming": 54,
+    "science": 50,
+    "tech": 70,
+    "music": 44,
+    "business": 49
   },
   "sources": [
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 7,
+      "articles": 8,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 23,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 19,
+      "articles": 20,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 23,
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 24,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 21,
       "error": null
     },
     {
@@ -276,7 +276,7 @@
       "category": "gaming",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -354,10 +354,10 @@
       "name": "ScienceDaily (All)",
       "url": "https://www.sciencedaily.com/rss/all.xml",
       "category": "science",
-      "ok": false,
+      "ok": true,
       "http_status": 200,
-      "articles": 0,
-      "error": "ValueError: feed is not well-formed XML even after cleanup: junk after document element: line 440, column 46"
+      "articles": 25,
+      "error": null
     },
     {
       "slug": "phys-org",
@@ -452,16 +452,6 @@
       "error": "ValueError: response body is empty -- upstream sent no feed (bot mitigation returns a 2xx with zero bytes)"
     },
     {
-      "slug": "sciencedaily",
-      "name": "ScienceDaily (All)",
-      "url": "https://www.sciencedaily.com/rss/all.xml",
-      "category": "science",
-      "ok": false,
-      "http_status": 200,
-      "articles": 0,
-      "error": "ValueError: feed is not well-formed XML even after cleanup: junk after document element: line 440, column 46"
-    },
-    {
       "slug": "indian-express-ent",
       "name": "The Indian Express (Entertainment)",
       "url": "https://indianexpress.com/section/entertainment/feed/",
@@ -475,22 +465,26 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 42
+      "count": 37
     },
     {
-      "word": "game",
+      "word": "halloween",
       "count": 15
     },
     {
-      "word": "court",
-      "count": 13
-    },
-    {
       "word": "indian",
-      "count": 13
+      "count": 14
     },
     {
-      "word": "games",
+      "word": "series",
+      "count": 14
+    },
+    {
+      "word": "game",
+      "count": 12
+    },
+    {
+      "word": "reveals",
       "count": 12
     },
     {
@@ -498,50 +492,39 @@
       "count": 12
     },
     {
-      "word": "film",
+      "word": "australia",
       "count": 11
-    },
-    {
-      "word": "officially",
-      "count": 11
-    },
-    {
-      "word": "years",
-      "count": 11
-    },
-    {
-      "word": "data",
-      "count": 10
-    },
-    {
-      "word": "gold",
-      "count": 10
     },
     {
       "word": "north",
-      "count": 9
+      "count": 11
     },
     {
-      "word": "november",
-      "count": 9
+      "word": "people",
+      "count": 11
     },
     {
       "word": "protests",
-      "count": 9
+      "count": 11
     },
     {
-      "word": "review",
-      "count": 9
+      "word": "binance",
+      "count": 10
+    },
+    {
+      "word": "match",
+      "count": 10
+    },
+    {
+      "word": "russia",
+      "count": 10
+    },
+    {
+      "word": "test",
+      "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-24T15:50:41.358784+00:00",
-      "duration_seconds": 8.7,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 638
-    },
     {
       "last_run": "2026-10-24T18:44:47.734081+00:00",
       "duration_seconds": 12.56,
@@ -744,6 +727,13 @@
       "feeds_ok": 32,
       "feeds_failed": 6,
       "articles": 617
+    },
+    {
+      "last_run": "2026-10-31T18:28:20.575432+00:00",
+      "duration_seconds": 8.04,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 639
     }
   ]
 }
