@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-10-31T23:18:09.624372+00:00",
-  "duration_seconds": 10.52,
+  "last_run": "2026-11-01T05:51:38.476570+00:00",
+  "duration_seconds": 10.32,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 638
+    "articles": 639
   },
   "categories": {
+    "india": 91,
     "movies": 42,
-    "entertainment": 60,
-    "gaming": 54,
-    "world": 128,
-    "tech": 70,
+    "gaming": 55,
+    "business": 50,
+    "music": 43,
+    "world": 130,
     "sports": 48,
     "science": 50,
-    "india": 93,
-    "music": 44,
-    "business": 49
+    "entertainment": 60,
+    "tech": 70
   },
   "sources": [
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 6,
+      "articles": 8,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 22,
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -276,7 +276,7 @@
       "category": "gaming",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 23,
       "error": null
     },
     {
@@ -465,73 +465,66 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 35
+      "count": 41
+    },
+    {
+      "word": "trump",
+      "count": 24
     },
     {
       "word": "halloween",
-      "count": 17
+      "count": 18
     },
     {
       "word": "game",
       "count": 16
     },
     {
-      "word": "trump",
+      "word": "protests",
       "count": 16
     },
     {
-      "word": "games",
-      "count": 13
-    },
-    {
-      "word": "people",
-      "count": 13
-    },
-    {
-      "word": "protests",
-      "count": 13
-    },
-    {
-      "word": "back",
-      "count": 11
-    },
-    {
-      "word": "delhi",
-      "count": 11
-    },
-    {
-      "word": "france",
-      "count": 11
-    },
-    {
-      "word": "star",
-      "count": 11
-    },
-    {
-      "word": "final",
-      "count": 10
-    },
-    {
-      "word": "indian",
-      "count": 10
+      "word": "world",
+      "count": 15
     },
     {
       "word": "november",
-      "count": 10
+      "count": 14
     },
     {
-      "word": "officially",
-      "count": 10
+      "word": "series",
+      "count": 14
+    },
+    {
+      "word": "binance",
+      "count": 13
+    },
+    {
+      "word": "indian",
+      "count": 13
+    },
+    {
+      "word": "reveals",
+      "count": 12
+    },
+    {
+      "word": "today",
+      "count": 12
+    },
+    {
+      "word": "games",
+      "count": 11
+    },
+    {
+      "word": "north",
+      "count": 11
+    },
+    {
+      "word": "people",
+      "count": 11
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-24T22:25:13.491076+00:00",
-      "duration_seconds": 13.51,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 635
-    },
     {
       "last_run": "2026-10-25T04:30:42.362256+00:00",
       "duration_seconds": 12.86,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 638
+    },
+    {
+      "last_run": "2026-11-01T05:51:38.476570+00:00",
+      "duration_seconds": 10.32,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 639
     }
   ]
 }
