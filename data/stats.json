@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-11-01T05:51:38.476570+00:00",
-  "duration_seconds": 10.32,
+  "last_run": "2026-11-01T13:11:29.552127+00:00",
+  "duration_seconds": 10.68,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 639
+    "articles": 644
   },
   "categories": {
-    "india": 91,
+    "india": 93,
+    "sports": 48,
     "movies": 42,
     "gaming": 55,
-    "business": 50,
-    "music": 43,
-    "world": 130,
-    "sports": 48,
-    "science": 50,
     "entertainment": 60,
-    "tech": 70
+    "world": 133,
+    "business": 50,
+    "science": 50,
+    "tech": 70,
+    "music": 43
   },
   "sources": [
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 8,
+      "articles": 9,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 24,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 24,
       "error": null
     },
     {
@@ -465,7 +465,7 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 41
+      "count": 36
     },
     {
       "word": "trump",
@@ -473,65 +473,58 @@
     },
     {
       "word": "halloween",
-      "count": 18
+      "count": 22
+    },
+    {
+      "word": "years",
+      "count": 17
     },
     {
       "word": "game",
-      "count": 16
-    },
-    {
-      "word": "protests",
-      "count": 16
-    },
-    {
-      "word": "world",
       "count": 15
     },
     {
       "word": "november",
-      "count": 14
+      "count": 15
     },
     {
       "word": "series",
-      "count": 14
-    },
-    {
-      "word": "binance",
-      "count": 13
-    },
-    {
-      "word": "indian",
-      "count": 13
-    },
-    {
-      "word": "reveals",
-      "count": 12
-    },
-    {
-      "word": "today",
-      "count": 12
+      "count": 15
     },
     {
       "word": "games",
+      "count": 14
+    },
+    {
+      "word": "protests",
+      "count": 14
+    },
+    {
+      "word": "rally",
+      "count": 13
+    },
+    {
+      "word": "scientists",
+      "count": 12
+    },
+    {
+      "word": "world",
+      "count": 12
+    },
+    {
+      "word": "france",
       "count": 11
     },
     {
-      "word": "north",
+      "word": "match",
       "count": 11
     },
     {
-      "word": "people",
+      "word": "record",
       "count": 11
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-25T04:30:42.362256+00:00",
-      "duration_seconds": 12.86,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 632
-    },
     {
       "last_run": "2026-10-25T11:15:19.334609+00:00",
       "duration_seconds": 14.19,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 639
+    },
+    {
+      "last_run": "2026-11-01T13:11:29.552127+00:00",
+      "duration_seconds": 10.68,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 644
     }
   ]
 }
