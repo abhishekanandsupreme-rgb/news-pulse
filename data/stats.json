@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-11-03T21:44:15.426094+00:00",
-  "duration_seconds": 13.59,
+  "last_run": "2026-11-04T02:11:12.894068+00:00",
+  "duration_seconds": 11.69,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 640
+    "articles": 638
   },
   "categories": {
-    "tech": 70,
-    "gaming": 54,
-    "world": 132,
-    "science": 50,
-    "music": 43,
     "movies": 42,
     "entertainment": 60,
+    "science": 50,
+    "gaming": 54,
+    "world": 131,
+    "music": 43,
     "india": 92,
     "business": 50,
-    "sports": 47
+    "tech": 70,
+    "sports": 46
   },
   "sources": [
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 23,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 21,
       "error": null
     },
     {
@@ -464,39 +464,39 @@
   ],
   "trending_keywords": [
     {
-      "word": "india",
-      "count": 33
+      "word": "trump",
+      "count": 30
     },
     {
-      "word": "trump",
-      "count": 26
+      "word": "india",
+      "count": 28
     },
     {
       "word": "midterm",
+      "count": 20
+    },
+    {
+      "word": "game",
+      "count": 19
+    },
+    {
+      "word": "election",
       "count": 18
     },
     {
       "word": "midterms",
-      "count": 16
+      "count": 18
     },
     {
-      "word": "election",
+      "word": "november",
+      "count": 17
+    },
+    {
+      "word": "elections",
       "count": 15
     },
     {
       "word": "reveals",
-      "count": 15
-    },
-    {
-      "word": "netflix",
-      "count": 14
-    },
-    {
-      "word": "elections",
-      "count": 13
-    },
-    {
-      "word": "games",
       "count": 13
     },
     {
@@ -504,34 +504,27 @@
       "count": 13
     },
     {
-      "word": "year",
-      "count": 13
-    },
-    {
-      "word": "apple",
+      "word": "court",
       "count": 12
     },
     {
-      "word": "game",
+      "word": "results",
       "count": 12
-    },
-    {
-      "word": "ahead",
-      "count": 11
     },
     {
       "word": "indian",
       "count": 11
+    },
+    {
+      "word": "iran",
+      "count": 11
+    },
+    {
+      "word": "scientists",
+      "count": 11
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-27T04:53:15.475069+00:00",
-      "duration_seconds": 7.81,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 638
-    },
     {
       "last_run": "2026-10-27T12:01:41.888151+00:00",
       "duration_seconds": 15.73,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 640
+    },
+    {
+      "last_run": "2026-11-04T02:11:12.894068+00:00",
+      "duration_seconds": 11.69,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 638
     }
   ]
 }
