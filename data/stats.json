@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-11-05T09:22:16.776396+00:00",
-  "duration_seconds": 10.52,
+  "last_run": "2026-11-05T17:57:57.570006+00:00",
+  "duration_seconds": 14.27,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 641
+    "articles": 637
   },
   "categories": {
-    "world": 129,
-    "india": 95,
-    "sports": 46,
-    "music": 44,
-    "science": 50,
-    "gaming": 55,
-    "movies": 42,
     "entertainment": 60,
-    "business": 50,
-    "tech": 70
+    "tech": 70,
+    "world": 125,
+    "india": 94,
+    "movies": 42,
+    "music": 43,
+    "gaming": 55,
+    "science": 50,
+    "sports": 48,
+    "business": 50
   },
   "sources": [
     {
@@ -36,7 +36,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 19,
       "error": null
     },
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 10,
+      "articles": 7,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 24,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 20,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 23,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 23,
       "error": null
     },
     {
@@ -465,73 +465,66 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 38
+      "count": 35
     },
     {
       "word": "trump",
-      "count": 27
+      "count": 21
     },
     {
-      "word": "time",
-      "count": 22
-    },
-    {
-      "word": "midterms",
+      "word": "year",
       "count": 17
     },
     {
-      "word": "years",
-      "count": 17
-    },
-    {
-      "word": "ocarina",
+      "word": "officially",
       "count": 15
     },
     {
-      "word": "ahead",
-      "count": 13
-    },
-    {
-      "word": "election",
-      "count": 13
-    },
-    {
-      "word": "indian",
-      "count": 13
-    },
-    {
       "word": "scientists",
-      "count": 12
-    },
-    {
-      "word": "world",
-      "count": 12
-    },
-    {
-      "word": "black",
-      "count": 11
+      "count": 15
     },
     {
       "word": "court",
-      "count": 11
+      "count": 14
+    },
+    {
+      "word": "years",
+      "count": 13
+    },
+    {
+      "word": "ahead",
+      "count": 12
+    },
+    {
+      "word": "midterms",
+      "count": 12
+    },
+    {
+      "word": "time",
+      "count": 12
     },
     {
       "word": "democrats",
       "count": 11
     },
     {
-      "word": "game",
+      "word": "free",
       "count": 11
+    },
+    {
+      "word": "indian",
+      "count": 11
+    },
+    {
+      "word": "delhi",
+      "count": 10
+    },
+    {
+      "word": "gaming",
+      "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-28T08:19:51.665030+00:00",
-      "duration_seconds": 8.36,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 629
-    },
     {
       "last_run": "2026-10-28T16:34:55.123429+00:00",
       "duration_seconds": 17.97,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 641
+    },
+    {
+      "last_run": "2026-11-05T17:57:57.570006+00:00",
+      "duration_seconds": 14.27,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 637
     }
   ]
 }
