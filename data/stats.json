@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-11-06T06:28:14.378635+00:00",
-  "duration_seconds": 10.38,
+  "last_run": "2026-11-06T15:52:28.115912+00:00",
+  "duration_seconds": 11.46,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 638
+    "articles": 642
   },
   "categories": {
-    "india": 95,
     "movies": 42,
-    "music": 43,
-    "sports": 48,
-    "world": 126,
-    "business": 50,
+    "india": 94,
     "entertainment": 60,
-    "gaming": 54,
     "science": 50,
-    "tech": 70
+    "world": 130,
+    "gaming": 54,
+    "tech": 70,
+    "business": 50,
+    "sports": 48,
+    "music": 44
   },
   "sources": [
     {
@@ -36,7 +36,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 25,
       "error": null
     },
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 5,
+      "articles": 6,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 23,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 24,
       "error": null
     },
     {
@@ -465,73 +465,66 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 38
-    },
-    {
-      "word": "trump",
-      "count": 23
+      "count": 28
     },
     {
       "word": "years",
+      "count": 19
+    },
+    {
+      "word": "diwali",
       "count": 17
     },
     {
-      "word": "election",
+      "word": "gaming",
+      "count": 15
+    },
+    {
+      "word": "year",
       "count": 14
+    },
+    {
+      "word": "court",
+      "count": 13
+    },
+    {
+      "word": "indian",
+      "count": 13
+    },
+    {
+      "word": "netflix",
+      "count": 13
+    },
+    {
+      "word": "ahead",
+      "count": 12
     },
     {
       "word": "delhi",
       "count": 12
     },
     {
-      "word": "time",
+      "word": "trump",
       "count": 12
     },
     {
-      "word": "year",
+      "word": "world",
       "count": 12
     },
     {
-      "word": "ahead",
+      "word": "leader",
       "count": 11
     },
     {
-      "word": "back",
+      "word": "november",
       "count": 11
     },
     {
-      "word": "black",
-      "count": 11
-    },
-    {
-      "word": "free",
-      "count": 11
-    },
-    {
-      "word": "friday",
-      "count": 11
-    },
-    {
-      "word": "gold",
-      "count": 11
-    },
-    {
-      "word": "office",
-      "count": 11
-    },
-    {
-      "word": "scientists",
-      "count": 11
+      "word": "bomb",
+      "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-29T05:37:17.936888+00:00",
-      "duration_seconds": 8.94,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 638
-    },
     {
       "last_run": "2026-10-29T12:51:18.372612+00:00",
       "duration_seconds": 9.83,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 638
+    },
+    {
+      "last_run": "2026-11-06T15:52:28.115912+00:00",
+      "duration_seconds": 11.46,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 642
     }
   ]
 }
