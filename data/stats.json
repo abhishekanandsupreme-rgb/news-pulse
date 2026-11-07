@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-11-06T21:26:51.420255+00:00",
-  "duration_seconds": 8.4,
+  "last_run": "2026-11-07T01:49:38.895954+00:00",
+  "duration_seconds": 7.12,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 640
+    "articles": 641
   },
   "categories": {
-    "movies": 42,
+    "india": 95,
     "entertainment": 60,
-    "world": 129,
-    "science": 50,
-    "gaming": 54,
-    "india": 94,
-    "music": 43,
     "tech": 70,
-    "sports": 48,
-    "business": 50
+    "movies": 42,
+    "business": 50,
+    "gaming": 55,
+    "world": 129,
+    "music": 44,
+    "science": 50,
+    "sports": 46
   },
   "sources": [
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 24,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 21,
       "error": null
     },
     {
@@ -276,7 +276,7 @@
       "category": "gaming",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 24,
       "error": null
     },
     {
@@ -465,38 +465,34 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 27
+      "count": 32
     },
     {
       "word": "trump",
-      "count": 23
-    },
-    {
-      "word": "free",
-      "count": 19
+      "count": 26
     },
     {
       "word": "november",
-      "count": 16
+      "count": 15
+    },
+    {
+      "word": "time",
+      "count": 14
     },
     {
       "word": "world",
-      "count": 15
-    },
-    {
-      "word": "year",
-      "count": 15
+      "count": 14
     },
     {
       "word": "years",
       "count": 14
     },
     {
-      "word": "time",
-      "count": 13
+      "word": "bomb",
+      "count": 12
     },
     {
-      "word": "bomb",
+      "word": "free",
       "count": 12
     },
     {
@@ -504,34 +500,31 @@
       "count": 12
     },
     {
-      "word": "game",
+      "word": "iran",
+      "count": 12
+    },
+    {
+      "word": "music",
+      "count": 12
+    },
+    {
+      "word": "year",
+      "count": 12
+    },
+    {
+      "word": "case",
       "count": 11
     },
     {
-      "word": "movie",
+      "word": "games",
       "count": 11
     },
     {
-      "word": "threats",
+      "word": "indian",
       "count": 11
-    },
-    {
-      "word": "tour",
-      "count": 11
-    },
-    {
-      "word": "diwali",
-      "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-29T19:33:22.563070+00:00",
-      "duration_seconds": 8.2,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 638
-    },
     {
       "last_run": "2026-10-29T23:54:19.107052+00:00",
       "duration_seconds": 6.99,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 640
+    },
+    {
+      "last_run": "2026-11-07T01:49:38.895954+00:00",
+      "duration_seconds": 7.12,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 641
     }
   ]
 }
