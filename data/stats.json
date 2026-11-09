@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-11-08T21:57:41.075127+00:00",
-  "duration_seconds": 8.23,
+  "last_run": "2026-11-09T01:40:00.783775+00:00",
+  "duration_seconds": 10.2,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -17,16 +17,16 @@
     "articles": 638
   },
   "categories": {
+    "world": 129,
     "movies": 42,
     "entertainment": 60,
-    "india": 92,
-    "world": 129,
+    "science": 50,
+    "india": 93,
+    "music": 42,
+    "sports": 47,
     "gaming": 55,
     "tech": 70,
-    "music": 44,
-    "science": 50,
-    "sports": 47,
-    "business": 49
+    "business": 50
   },
   "sources": [
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 22,
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 22,
       "error": null
     },
     {
@@ -465,73 +465,66 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 30
+      "count": 31
     },
     {
       "word": "diwali",
-      "count": 25
+      "count": 27
     },
     {
-      "word": "time",
+      "word": "trump",
       "count": 21
     },
     {
       "word": "game",
-      "count": 18
+      "count": 20
+    },
+    {
+      "word": "film",
+      "count": 17
+    },
+    {
+      "word": "nvidia",
+      "count": 17
+    },
+    {
+      "word": "time",
+      "count": 17
     },
     {
       "word": "indian",
-      "count": 17
-    },
-    {
-      "word": "trump",
-      "count": 17
-    },
-    {
-      "word": "year",
       "count": 15
     },
     {
-      "word": "years",
-      "count": 14
+      "word": "iran",
+      "count": 15
     },
     {
-      "word": "iran",
+      "word": "huang",
+      "count": 13
+    },
+    {
+      "word": "week",
       "count": 13
     },
     {
       "word": "office",
-      "count": 13
+      "count": 12
     },
     {
-      "word": "film",
-      "count": 12
+      "word": "chinese",
+      "count": 11
+    },
+    {
+      "word": "jensen",
+      "count": 11
     },
     {
       "word": "scientists",
-      "count": 12
-    },
-    {
-      "word": "back",
-      "count": 11
-    },
-    {
-      "word": "dead",
-      "count": 11
-    },
-    {
-      "word": "train",
       "count": 11
     }
   ],
   "history": [
-    {
-      "last_run": "2026-10-31T18:28:20.575432+00:00",
-      "duration_seconds": 8.04,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 639
-    },
     {
       "last_run": "2026-10-31T23:18:09.624372+00:00",
       "duration_seconds": 10.52,
@@ -731,6 +724,13 @@
     {
       "last_run": "2026-11-08T21:57:41.075127+00:00",
       "duration_seconds": 8.23,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 638
+    },
+    {
+      "last_run": "2026-11-09T01:40:00.783775+00:00",
+      "duration_seconds": 10.2,
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 638
