@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-11-09T09:38:50.166021+00:00",
-  "duration_seconds": 8.06,
+  "last_run": "2026-11-09T20:39:32.891126+00:00",
+  "duration_seconds": 22.17,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 631
+    "articles": 642
   },
   "categories": {
-    "india": 91,
-    "gaming": 55,
-    "world": 129,
-    "entertainment": 60,
-    "sports": 42,
-    "movies": 42,
-    "business": 50,
-    "tech": 70,
     "music": 42,
-    "science": 50
+    "movies": 42,
+    "entertainment": 60,
+    "gaming": 54,
+    "world": 131,
+    "science": 50,
+    "india": 96,
+    "tech": 69,
+    "sports": 48,
+    "business": 50
   },
   "sources": [
     {
@@ -36,7 +36,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 6,
+      "articles": 10,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 22,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 20,
+      "articles": 21,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 25,
       "error": null
     },
     {
@@ -176,7 +176,7 @@
       "category": "tech",
       "ok": true,
       "http_status": 200,
-      "articles": 20,
+      "articles": 19,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 17,
+      "articles": 23,
       "error": null
     },
     {
@@ -276,7 +276,7 @@
       "category": "gaming",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -465,42 +465,46 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 37
+      "count": 31
     },
     {
       "word": "nvidia",
       "count": 23
     },
     {
-      "word": "diwali",
-      "count": 20
+      "word": "years",
+      "count": 23
     },
     {
       "word": "trump",
-      "count": 20
+      "count": 22
     },
     {
-      "word": "game",
-      "count": 17
+      "word": "iran",
+      "count": 19
     },
     {
       "word": "huang",
-      "count": 17
+      "count": 18
     },
     {
-      "word": "delhi",
+      "word": "game",
+      "count": 16
+    },
+    {
+      "word": "diwali",
       "count": 15
     },
     {
-      "word": "time",
-      "count": 15
-    },
-    {
-      "word": "chinese",
+      "word": "james",
       "count": 14
     },
     {
-      "word": "years",
+      "word": "time",
+      "count": 14
+    },
+    {
+      "word": "year",
       "count": 14
     },
     {
@@ -508,30 +512,19 @@
       "count": 13
     },
     {
-      "word": "iran",
+      "word": "series",
+      "count": 13
+    },
+    {
+      "word": "indian",
       "count": 12
     },
     {
-      "word": "shooting",
-      "count": 12
-    },
-    {
-      "word": "week",
-      "count": 12
-    },
-    {
-      "word": "year",
+      "word": "like",
       "count": 12
     }
   ],
   "history": [
-    {
-      "last_run": "2026-11-01T05:51:38.476570+00:00",
-      "duration_seconds": 10.32,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 639
-    },
     {
       "last_run": "2026-11-01T13:11:29.552127+00:00",
       "duration_seconds": 10.68,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 631
+    },
+    {
+      "last_run": "2026-11-09T20:39:32.891126+00:00",
+      "duration_seconds": 22.17,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 642
     }
   ]
 }
