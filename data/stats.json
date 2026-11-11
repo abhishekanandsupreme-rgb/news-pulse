@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-11-11T01:52:18.052655+00:00",
-  "duration_seconds": 10.16,
+  "last_run": "2026-11-11T09:15:17.992635+00:00",
+  "duration_seconds": 8.55,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 643
+    "articles": 641
   },
   "categories": {
-    "entertainment": 60,
     "movies": 42,
+    "world": 131,
+    "gaming": 55,
     "india": 95,
-    "science": 50,
-    "business": 48,
-    "world": 134,
+    "business": 49,
     "sports": 48,
-    "gaming": 54,
     "music": 42,
-    "tech": 70
+    "entertainment": 59,
+    "tech": 70,
+    "science": 50
   },
   "sources": [
     {
@@ -36,7 +36,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 23,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 23,
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 24,
       "error": null
     },
     {
@@ -276,7 +276,7 @@
       "category": "gaming",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -406,7 +406,7 @@
       "category": "entertainment",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     }
   ],
@@ -465,73 +465,66 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 30
+      "count": 29
     },
     {
-      "word": "nvidia",
-      "count": 16
-    },
-    {
-      "word": "world",
-      "count": 16
-    },
-    {
-      "word": "iran",
+      "word": "indian",
       "count": 15
     },
     {
-      "word": "november",
+      "word": "xbox",
+      "count": 15
+    },
+    {
+      "word": "nvidia",
       "count": 13
     },
     {
-      "word": "hegseth",
-      "count": 12
-    },
-    {
-      "word": "talks",
-      "count": 12
-    },
-    {
-      "word": "back",
-      "count": 11
-    },
-    {
-      "word": "dies",
-      "count": 11
-    },
-    {
-      "word": "film",
-      "count": 11
+      "word": "year",
+      "count": 13
     },
     {
       "word": "gaming",
       "count": 11
     },
     {
-      "word": "time",
+      "word": "world",
       "count": 11
     },
     {
-      "word": "xbox",
+      "word": "years",
       "count": 11
     },
     {
-      "word": "faces",
+      "word": "back",
       "count": 10
     },
     {
-      "word": "indian",
+      "word": "china",
+      "count": 10
+    },
+    {
+      "word": "game",
+      "count": 10
+    },
+    {
+      "word": "iran",
+      "count": 10
+    },
+    {
+      "word": "review",
+      "count": 10
+    },
+    {
+      "word": "test",
+      "count": 10
+    },
+    {
+      "word": "time",
       "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-11-02T15:37:57.480394+00:00",
-      "duration_seconds": 19.39,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 644
-    },
     {
       "last_run": "2026-11-02T23:26:21.776633+00:00",
       "duration_seconds": 6.74,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 643
+    },
+    {
+      "last_run": "2026-11-11T09:15:17.992635+00:00",
+      "duration_seconds": 8.55,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 641
     }
   ]
 }
