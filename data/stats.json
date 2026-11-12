@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-11-12T09:43:02.392232+00:00",
-  "duration_seconds": 12.7,
+  "last_run": "2026-11-12T18:11:25.606758+00:00",
+  "duration_seconds": 8.25,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 636
+    "articles": 632
   },
   "categories": {
-    "india": 93,
-    "science": 50,
-    "music": 44,
+    "music": 41,
     "movies": 42,
-    "sports": 44,
-    "gaming": 55,
-    "world": 128,
-    "business": 50,
     "entertainment": 60,
-    "tech": 70
+    "tech": 70,
+    "india": 93,
+    "gaming": 55,
+    "science": 50,
+    "world": 128,
+    "business": 49,
+    "sports": 44
   },
   "sources": [
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 7,
+      "articles": 5,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 23,
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 21,
       "error": null
     },
     {
@@ -464,74 +464,67 @@
   ],
   "trending_keywords": [
     {
-      "word": "india",
-      "count": 37
+      "word": "nvidia",
+      "count": 39
     },
     {
       "word": "huang",
-      "count": 24
-    },
-    {
-      "word": "nvidia",
-      "count": 22
+      "count": 38
     },
     {
       "word": "jensen",
-      "count": 20
+      "count": 30
     },
     {
-      "word": "back",
-      "count": 15
-    },
-    {
-      "word": "film",
-      "count": 15
-    },
-    {
-      "word": "world",
-      "count": 15
-    },
-    {
-      "word": "years",
-      "count": 15
-    },
-    {
-      "word": "gaming",
-      "count": 13
-    },
-    {
-      "word": "officially",
-      "count": 13
-    },
-    {
-      "word": "game",
-      "count": 12
+      "word": "india",
+      "count": 29
     },
     {
       "word": "november",
+      "count": 13
+    },
+    {
+      "word": "world",
+      "count": 13
+    },
+    {
+      "word": "gaming",
       "count": 12
     },
     {
-      "word": "strike",
-      "count": 11
-    },
-    {
       "word": "ukraine",
+      "count": 12
+    },
+    {
+      "word": "xbox",
       "count": 11
     },
     {
-      "word": "home",
+      "word": "black",
+      "count": 10
+    },
+    {
+      "word": "game",
+      "count": 10
+    },
+    {
+      "word": "group",
+      "count": 10
+    },
+    {
+      "word": "iran",
+      "count": 10
+    },
+    {
+      "word": "power",
+      "count": 10
+    },
+    {
+      "word": "review",
       "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-11-03T21:44:15.426094+00:00",
-      "duration_seconds": 13.59,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 640
-    },
     {
       "last_run": "2026-11-04T02:11:12.894068+00:00",
       "duration_seconds": 11.69,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 636
+    },
+    {
+      "last_run": "2026-11-12T18:11:25.606758+00:00",
+      "duration_seconds": 8.25,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 632
     }
   ]
 }
