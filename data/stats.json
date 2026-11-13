@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-11-12T18:11:25.606758+00:00",
-  "duration_seconds": 8.25,
+  "last_run": "2026-11-13T01:00:10.863262+00:00",
+  "duration_seconds": 15.01,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 632
+    "articles": 633
   },
   "categories": {
-    "music": 41,
+    "sports": 46,
+    "music": 43,
     "movies": 42,
-    "entertainment": 60,
     "tech": 70,
-    "india": 93,
-    "gaming": 55,
-    "science": 50,
+    "entertainment": 60,
     "world": 128,
-    "business": 49,
-    "sports": 44
+    "science": 50,
+    "india": 91,
+    "gaming": 53,
+    "business": 50
   },
   "sources": [
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 22,
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 19,
+      "articles": 21,
       "error": null
     },
     {
@@ -276,7 +276,7 @@
       "category": "gaming",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 23,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 23,
       "error": null
     },
     {
@@ -465,22 +465,26 @@
   "trending_keywords": [
     {
       "word": "nvidia",
-      "count": 39
+      "count": 36
     },
     {
       "word": "huang",
-      "count": 38
+      "count": 33
     },
     {
       "word": "jensen",
-      "count": 30
+      "count": 26
     },
     {
       "word": "india",
-      "count": 29
+      "count": 25
     },
     {
-      "word": "november",
+      "word": "xbox",
+      "count": 14
+    },
+    {
+      "word": "microsoft",
       "count": 13
     },
     {
@@ -488,7 +492,7 @@
       "count": 13
     },
     {
-      "word": "gaming",
+      "word": "november",
       "count": 12
     },
     {
@@ -496,42 +500,31 @@
       "count": 12
     },
     {
-      "word": "xbox",
+      "word": "game",
       "count": 11
     },
     {
-      "word": "black",
+      "word": "outlook",
+      "count": 11
+    },
+    {
+      "word": "gaza",
       "count": 10
     },
     {
-      "word": "game",
+      "word": "still",
       "count": 10
     },
     {
-      "word": "group",
+      "word": "talks",
       "count": 10
     },
     {
-      "word": "iran",
-      "count": 10
-    },
-    {
-      "word": "power",
-      "count": 10
-    },
-    {
-      "word": "review",
+      "word": "trump",
       "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-11-04T02:11:12.894068+00:00",
-      "duration_seconds": 11.69,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 638
-    },
     {
       "last_run": "2026-11-04T12:00:40.789628+00:00",
       "duration_seconds": 24.01,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 632
+    },
+    {
+      "last_run": "2026-11-13T01:00:10.863262+00:00",
+      "duration_seconds": 15.01,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 633
     }
   ]
 }
