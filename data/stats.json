@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-11-15T16:59:54.067446+00:00",
-  "duration_seconds": 11.62,
+  "last_run": "2026-11-15T22:44:20.134973+00:00",
+  "duration_seconds": 10.99,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,17 +14,17 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 639
+    "articles": 632
   },
   "categories": {
     "movies": 42,
-    "tech": 70,
-    "entertainment": 60,
-    "india": 94,
-    "world": 131,
-    "science": 50,
-    "sports": 45,
+    "world": 126,
     "music": 43,
+    "india": 94,
+    "entertainment": 59,
+    "tech": 70,
+    "sports": 44,
+    "science": 50,
     "gaming": 55,
     "business": 49
   },
@@ -36,7 +36,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 20,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 20,
+      "articles": 19,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 20,
+      "articles": 19,
       "error": null
     },
     {
@@ -406,7 +406,7 @@
       "category": "entertainment",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     }
   ],
@@ -465,46 +465,38 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 30
+      "count": 33
     },
     {
       "word": "game",
-      "count": 18
-    },
-    {
-      "word": "huang",
-      "count": 18
-    },
-    {
-      "word": "jensen",
-      "count": 17
-    },
-    {
-      "word": "years",
-      "count": 17
-    },
-    {
-      "word": "week",
-      "count": 16
-    },
-    {
-      "word": "star",
-      "count": 15
+      "count": 21
     },
     {
       "word": "nvidia",
+      "count": 17
+    },
+    {
+      "word": "huang",
+      "count": 15
+    },
+    {
+      "word": "week",
+      "count": 15
+    },
+    {
+      "word": "world",
       "count": 14
     },
     {
-      "word": "asia",
+      "word": "jensen",
       "count": 13
     },
     {
-      "word": "trump",
-      "count": 13
+      "word": "november",
+      "count": 12
     },
     {
-      "word": "flight",
+      "word": "officially",
       "count": 12
     },
     {
@@ -512,26 +504,27 @@
       "count": 12
     },
     {
-      "word": "ahead",
+      "word": "still",
+      "count": 12
+    },
+    {
+      "word": "flight",
       "count": 11
     },
     {
-      "word": "games",
+      "word": "reveals",
       "count": 11
     },
     {
-      "word": "november",
+      "word": "series",
+      "count": 11
+    },
+    {
+      "word": "years",
       "count": 11
     }
   ],
   "history": [
-    {
-      "last_run": "2026-11-07T01:49:38.895954+00:00",
-      "duration_seconds": 7.12,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 641
-    },
     {
       "last_run": "2026-11-07T08:40:41.654103+00:00",
       "duration_seconds": 9.18,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 639
+    },
+    {
+      "last_run": "2026-11-15T22:44:20.134973+00:00",
+      "duration_seconds": 10.99,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 632
     }
   ]
 }
