@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-11-16T06:13:01.759754+00:00",
-  "duration_seconds": 5.76,
+  "last_run": "2026-11-16T18:22:26.682965+00:00",
+  "duration_seconds": 12.48,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 634
+    "articles": 642
   },
   "categories": {
-    "india": 92,
-    "movies": 42,
-    "world": 128,
-    "sports": 45,
-    "business": 49,
-    "entertainment": 59,
-    "gaming": 55,
     "tech": 70,
     "music": 44,
-    "science": 50
+    "science": 50,
+    "gaming": 55,
+    "movies": 42,
+    "entertainment": 59,
+    "world": 130,
+    "sports": 48,
+    "india": 94,
+    "business": 50
   },
   "sources": [
     {
@@ -36,7 +36,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 23,
       "error": null
     },
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 8,
+      "articles": 9,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 23,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 23,
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 20,
+      "articles": 23,
       "error": null
     },
     {
@@ -465,73 +465,66 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 34
+      "count": 27
+    },
+    {
+      "word": "trump",
+      "count": 20
+    },
+    {
+      "word": "grammy",
+      "count": 18
     },
     {
       "word": "nvidia",
-      "count": 24
+      "count": 18
     },
     {
-      "word": "game",
-      "count": 22
-    },
-    {
-      "word": "years",
+      "word": "year",
       "count": 17
     },
     {
-      "word": "week",
+      "word": "game",
+      "count": 15
+    },
+    {
+      "word": "black",
       "count": 14
     },
     {
-      "word": "time",
+      "word": "return",
+      "count": 14
+    },
+    {
+      "word": "gaming",
       "count": 13
     },
     {
-      "word": "huang",
-      "count": 12
+      "word": "nominations",
+      "count": 13
     },
     {
-      "word": "november",
-      "count": 12
-    },
-    {
-      "word": "china",
-      "count": 11
-    },
-    {
-      "word": "jensen",
-      "count": 11
-    },
-    {
-      "word": "star",
-      "count": 11
-    },
-    {
-      "word": "world",
-      "count": 11
+      "word": "robert",
+      "count": 13
     },
     {
       "word": "amazon",
-      "count": 10
+      "count": 12
     },
     {
-      "word": "reveals",
-      "count": 10
+      "word": "bond",
+      "count": 12
     },
     {
-      "word": "series",
-      "count": 10
+      "word": "friday",
+      "count": 12
+    },
+    {
+      "word": "james",
+      "count": 12
     }
   ],
   "history": [
-    {
-      "last_run": "2026-11-07T16:20:39.517827+00:00",
-      "duration_seconds": 12.37,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 635
-    },
     {
       "last_run": "2026-11-07T21:43:44.438271+00:00",
       "duration_seconds": 10.36,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 634
+    },
+    {
+      "last_run": "2026-11-16T18:22:26.682965+00:00",
+      "duration_seconds": 12.48,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 642
     }
   ]
 }
