@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-11-20T12:44:36.172997+00:00",
-  "duration_seconds": 8.1,
+  "last_run": "2026-11-20T21:45:54.691912+00:00",
+  "duration_seconds": 14.84,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 646
+    "articles": 642
   },
   "categories": {
-    "world": 130,
-    "science": 50,
-    "sports": 49,
     "entertainment": 60,
-    "india": 97,
-    "gaming": 54,
     "movies": 42,
+    "science": 50,
+    "world": 130,
+    "music": 42,
+    "india": 94,
+    "gaming": 55,
     "tech": 70,
     "business": 50,
-    "music": 44
+    "sports": 49
   },
   "sources": [
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 9,
+      "articles": 7,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 21,
+      "articles": 23,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 21,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 23,
       "error": null
     },
     {
@@ -276,7 +276,7 @@
       "category": "gaming",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 22,
       "error": null
     },
     {
@@ -465,73 +465,66 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 36
+      "count": 31
+    },
+    {
+      "word": "anthropic",
+      "count": 16
     },
     {
       "word": "trump",
       "count": 16
     },
     {
-      "word": "ukraine",
+      "word": "years",
+      "count": 16
+    },
+    {
+      "word": "film",
       "count": 15
-    },
-    {
-      "word": "anthropic",
-      "count": 14
-    },
-    {
-      "word": "season",
-      "count": 14
-    },
-    {
-      "word": "world",
-      "count": 14
-    },
-    {
-      "word": "deal",
-      "count": 13
     },
     {
       "word": "game",
       "count": 13
     },
     {
-      "word": "indian",
+      "word": "star",
       "count": 13
     },
     {
-      "word": "release",
+      "word": "year",
       "count": 13
     },
     {
-      "word": "years",
-      "count": 13
-    },
-    {
-      "word": "russia",
+      "word": "deal",
       "count": 12
     },
     {
-      "word": "test",
+      "word": "series",
       "count": 12
     },
     {
-      "word": "china",
+      "word": "home",
       "count": 11
     },
     {
-      "word": "iran",
+      "word": "music",
       "count": 11
+    },
+    {
+      "word": "reveals",
+      "count": 11
+    },
+    {
+      "word": "time",
+      "count": 11
+    },
+    {
+      "word": "data",
+      "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-11-10T20:46:40.772045+00:00",
-      "duration_seconds": 9.5,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 641
-    },
     {
       "last_run": "2026-11-11T01:52:18.052655+00:00",
       "duration_seconds": 10.16,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 646
+    },
+    {
+      "last_run": "2026-11-20T21:45:54.691912+00:00",
+      "duration_seconds": 14.84,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 642
     }
   ]
 }
