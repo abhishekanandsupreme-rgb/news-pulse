@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-11-22T23:33:04.652923+00:00",
-  "duration_seconds": 8.91,
+  "last_run": "2026-11-23T07:23:40.625027+00:00",
+  "duration_seconds": 12.71,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 641
+    "articles": 637
   },
   "categories": {
+    "sports": 46,
+    "india": 95,
+    "world": 129,
     "movies": 42,
-    "entertainment": 58,
-    "world": 130,
-    "business": 50,
+    "tech": 70,
     "music": 44,
     "gaming": 54,
-    "tech": 70,
-    "india": 96,
-    "science": 50,
-    "sports": 47
+    "business": 49,
+    "entertainment": 58,
+    "science": 50
   },
   "sources": [
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 6,
+      "articles": 5,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 22,
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 21,
       "error": null
     },
     {
@@ -465,73 +465,66 @@
   "trending_keywords": [
     {
       "word": "india",
-      "count": 41
-    },
-    {
-      "word": "black",
-      "count": 20
-    },
-    {
-      "word": "deal",
-      "count": 16
-    },
-    {
-      "word": "years",
-      "count": 16
-    },
-    {
-      "word": "games",
-      "count": 15
-    },
-    {
-      "word": "russian",
-      "count": 15
-    },
-    {
-      "word": "year",
-      "count": 15
-    },
-    {
-      "word": "climate",
-      "count": 14
-    },
-    {
-      "word": "friday",
-      "count": 14
-    },
-    {
-      "word": "officially",
-      "count": 14
-    },
-    {
-      "word": "star",
-      "count": 14
-    },
-    {
-      "word": "trump",
-      "count": 14
-    },
-    {
-      "word": "talks",
-      "count": 13
+      "count": 44
     },
     {
       "word": "game",
+      "count": 18
+    },
+    {
+      "word": "years",
+      "count": 18
+    },
+    {
+      "word": "black",
+      "count": 16
+    },
+    {
+      "word": "deal",
+      "count": 15
+    },
+    {
+      "word": "games",
+      "count": 13
+    },
+    {
+      "word": "test",
+      "count": 13
+    },
+    {
+      "word": "film",
       "count": 12
     },
     {
-      "word": "drone",
+      "word": "friday",
+      "count": 12
+    },
+    {
+      "word": "russian",
+      "count": 12
+    },
+    {
+      "word": "star",
+      "count": 12
+    },
+    {
+      "word": "show",
       "count": 11
+    },
+    {
+      "word": "talks",
+      "count": 11
+    },
+    {
+      "word": "trump",
+      "count": 11
+    },
+    {
+      "word": "climate",
+      "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-11-13T09:26:25.861876+00:00",
-      "duration_seconds": 20.13,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 635
-    },
     {
       "last_run": "2026-11-13T17:39:34.387679+00:00",
       "duration_seconds": 10.77,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 641
+    },
+    {
+      "last_run": "2026-11-23T07:23:40.625027+00:00",
+      "duration_seconds": 12.71,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 637
     }
   ]
 }
