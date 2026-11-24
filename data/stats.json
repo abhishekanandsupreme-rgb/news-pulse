@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-11-24T04:43:24.954613+00:00",
-  "duration_seconds": 11.44,
+  "last_run": "2026-11-24T17:31:48.123201+00:00",
+  "duration_seconds": 47.78,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -12,21 +12,21 @@
   },
   "totals": {
     "feeds": 38,
-    "feeds_ok": 33,
-    "feeds_failed": 5,
-    "articles": 637
+    "feeds_ok": 30,
+    "feeds_failed": 8,
+    "articles": 575
   },
   "categories": {
-    "india": 98,
-    "world": 126,
-    "business": 49,
+    "entertainment": 34,
     "science": 50,
     "movies": 42,
-    "entertainment": 60,
-    "tech": 69,
-    "gaming": 54,
-    "sports": 45,
-    "music": 44
+    "tech": 50,
+    "india": 97,
+    "business": 50,
+    "sports": 46,
+    "music": 45,
+    "world": 131,
+    "gaming": 30
   },
   "sources": [
     {
@@ -36,7 +36,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 25,
       "error": null
     },
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 6,
+      "articles": 8,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 23,
       "error": null
     },
     {
@@ -174,10 +174,10 @@
       "name": "Hacker News (Front Page)",
       "url": "https://hnrss.org/frontpage",
       "category": "tech",
-      "ok": true,
-      "http_status": 200,
-      "articles": 19,
-      "error": null
+      "ok": false,
+      "http_status": null,
+      "articles": 0,
+      "error": "URLError: <urlopen error timed out>"
     },
     {
       "slug": "ndtv-gadgets",
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 20,
+      "articles": 21,
       "error": null
     },
     {
@@ -274,10 +274,10 @@
       "name": "Google News (Gaming)",
       "url": "https://news.google.com/rss/search?q=gaming%20news&hl=en-IN&gl=IN&ceid=IN:en",
       "category": "gaming",
-      "ok": true,
-      "http_status": 200,
-      "articles": 24,
-      "error": null
+      "ok": false,
+      "http_status": 429,
+      "articles": 0,
+      "error": "HTTP 429"
     },
     {
       "slug": "billboard",
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -374,10 +374,10 @@
       "name": "The A.V. Club",
       "url": "https://www.avclub.com/rss",
       "category": "entertainment",
-      "ok": true,
-      "http_status": 200,
-      "articles": 25,
-      "error": null
+      "ok": false,
+      "http_status": null,
+      "articles": 0,
+      "error": "TimeoutError: The read operation timed out"
     },
     {
       "slug": "collider",
@@ -406,7 +406,7 @@
       "category": "entertainment",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     }
   ],
@@ -420,6 +420,16 @@
       "http_status": 403,
       "articles": 0,
       "error": "HTTP 403"
+    },
+    {
+      "slug": "hackernews",
+      "name": "Hacker News (Front Page)",
+      "url": "https://hnrss.org/frontpage",
+      "category": "tech",
+      "ok": false,
+      "http_status": null,
+      "articles": 0,
+      "error": "URLError: <urlopen error timed out>"
     },
     {
       "slug": "ndtv-gadgets",
@@ -452,6 +462,26 @@
       "error": "ValueError: response body is empty -- upstream sent no feed (bot mitigation returns a 2xx with zero bytes)"
     },
     {
+      "slug": "google-gaming",
+      "name": "Google News (Gaming)",
+      "url": "https://news.google.com/rss/search?q=gaming%20news&hl=en-IN&gl=IN&ceid=IN:en",
+      "category": "gaming",
+      "ok": false,
+      "http_status": 429,
+      "articles": 0,
+      "error": "HTTP 429"
+    },
+    {
+      "slug": "av-club",
+      "name": "The A.V. Club",
+      "url": "https://www.avclub.com/rss",
+      "category": "entertainment",
+      "ok": false,
+      "http_status": null,
+      "articles": 0,
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
       "slug": "indian-express-ent",
       "name": "The Indian Express (Entertainment)",
       "url": "https://indianexpress.com/section/entertainment/feed/",
@@ -464,74 +494,67 @@
   ],
   "trending_keywords": [
     {
+      "word": "india",
+      "count": 31
+    },
+    {
       "word": "huang",
-      "count": 33
+      "count": 29
     },
     {
       "word": "nvidia",
-      "count": 32
-    },
-    {
-      "word": "india",
-      "count": 28
-    },
-    {
-      "word": "jensen",
       "count": 25
     },
     {
-      "word": "trump",
+      "word": "jensen",
       "count": 21
     },
     {
-      "word": "return",
-      "count": 20
-    },
-    {
-      "word": "black",
-      "count": 19
-    },
-    {
-      "word": "years",
-      "count": 17
-    },
-    {
-      "word": "friday",
-      "count": 16
-    },
-    {
-      "word": "world",
-      "count": 15
+      "word": "trump",
+      "count": 18
     },
     {
       "word": "year",
+      "count": 16
+    },
+    {
+      "word": "back",
       "count": 15
     },
     {
-      "word": "russian",
+      "word": "film",
+      "count": 14
+    },
+    {
+      "word": "return",
+      "count": 14
+    },
+    {
+      "word": "years",
+      "count": 14
+    },
+    {
+      "word": "china",
       "count": 13
     },
     {
-      "word": "film",
+      "word": "ukraine",
+      "count": 13
+    },
+    {
+      "word": "black",
       "count": 12
     },
     {
-      "word": "officially",
-      "count": 12
+      "word": "deal",
+      "count": 11
     },
     {
-      "word": "talks",
-      "count": 12
+      "word": "reveals",
+      "count": 11
     }
   ],
   "history": [
-    {
-      "last_run": "2026-11-14T06:07:57.173963+00:00",
-      "duration_seconds": 9.75,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 633
-    },
     {
       "last_run": "2026-11-14T14:58:45.787148+00:00",
       "duration_seconds": 12.5,
@@ -734,6 +757,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 637
+    },
+    {
+      "last_run": "2026-11-24T17:31:48.123201+00:00",
+      "duration_seconds": 47.78,
+      "feeds_ok": 30,
+      "feeds_failed": 8,
+      "articles": 575
     }
   ]
 }
