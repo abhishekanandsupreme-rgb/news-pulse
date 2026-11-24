@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-11-23T20:05:26.267772+00:00",
-  "duration_seconds": 8.94,
+  "last_run": "2026-11-24T04:43:24.954613+00:00",
+  "duration_seconds": 11.44,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 642
+    "articles": 637
   },
   "categories": {
-    "movies": 42,
-    "science": 50,
-    "entertainment": 60,
-    "music": 45,
-    "tech": 70,
-    "gaming": 55,
+    "india": 98,
     "world": 126,
-    "india": 100,
     "business": 49,
-    "sports": 45
+    "science": 50,
+    "movies": 42,
+    "entertainment": 60,
+    "tech": 69,
+    "gaming": 54,
+    "sports": 45,
+    "music": 44
   },
   "sources": [
     {
@@ -36,7 +36,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 22,
       "error": null
     },
     {
@@ -66,7 +66,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 4,
+      "articles": 6,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 23,
       "error": null
     },
     {
@@ -96,7 +96,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -176,7 +176,7 @@
       "category": "tech",
       "ok": true,
       "http_status": 200,
-      "articles": 20,
+      "articles": 19,
       "error": null
     },
     {
@@ -276,7 +276,7 @@
       "category": "gaming",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -464,74 +464,67 @@
   ],
   "trending_keywords": [
     {
-      "word": "india",
-      "count": 32
-    },
-    {
       "word": "huang",
-      "count": 25
+      "count": 33
     },
     {
       "word": "nvidia",
-      "count": 25
+      "count": 32
     },
     {
-      "word": "black",
-      "count": 20
+      "word": "india",
+      "count": 28
     },
     {
       "word": "jensen",
-      "count": 18
+      "count": 25
+    },
+    {
+      "word": "trump",
+      "count": 21
+    },
+    {
+      "word": "return",
+      "count": 20
+    },
+    {
+      "word": "black",
+      "count": 19
     },
     {
       "word": "years",
-      "count": 18
-    },
-    {
-      "word": "friday",
       "count": 17
     },
     {
-      "word": "deal",
-      "count": 14
+      "word": "friday",
+      "count": 16
     },
     {
-      "word": "gaming",
-      "count": 14
+      "word": "world",
+      "count": 15
     },
     {
-      "word": "court",
-      "count": 13
-    },
-    {
-      "word": "film",
-      "count": 13
+      "word": "year",
+      "count": 15
     },
     {
       "word": "russian",
       "count": 13
     },
     {
-      "word": "world",
-      "count": 13
-    },
-    {
-      "word": "record",
+      "word": "film",
       "count": 12
     },
     {
-      "word": "star",
+      "word": "officially",
+      "count": 12
+    },
+    {
+      "word": "talks",
       "count": 12
     }
   ],
   "history": [
-    {
-      "last_run": "2026-11-13T23:28:26.620092+00:00",
-      "duration_seconds": 14.87,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 631
-    },
     {
       "last_run": "2026-11-14T06:07:57.173963+00:00",
       "duration_seconds": 9.75,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 642
+    },
+    {
+      "last_run": "2026-11-24T04:43:24.954613+00:00",
+      "duration_seconds": 11.44,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 637
     }
   ]
 }
