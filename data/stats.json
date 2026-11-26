@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-11-26T00:13:08.741599+00:00",
-  "duration_seconds": 11.21,
+  "last_run": "2026-11-26T10:45:17.388667+00:00",
+  "duration_seconds": 8.32,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -14,19 +14,19 @@
     "feeds": 38,
     "feeds_ok": 33,
     "feeds_failed": 5,
-    "articles": 650
+    "articles": 646
   },
   "categories": {
-    "entertainment": 60,
     "movies": 42,
     "science": 50,
+    "india": 100,
+    "world": 132,
+    "entertainment": 58,
+    "business": 48,
     "gaming": 55,
-    "world": 131,
-    "music": 45,
-    "india": 99,
     "tech": 70,
-    "sports": 48,
-    "business": 50
+    "sports": 47,
+    "music": 44
   },
   "sources": [
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 23,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 25,
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 23,
       "error": null
     },
     {
@@ -246,7 +246,7 @@
       "category": "sports",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 22,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 24,
       "error": null
     },
     {
@@ -406,7 +406,7 @@
       "category": "entertainment",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 23,
       "error": null
     }
   ],
@@ -468,70 +468,63 @@
       "count": 34
     },
     {
-      "word": "court",
-      "count": 18
-    },
-    {
-      "word": "duran",
-      "count": 18
-    },
-    {
       "word": "black",
-      "count": 14
+      "count": 21
     },
     {
-      "word": "indian",
-      "count": 14
-    },
-    {
-      "word": "china",
-      "count": 13
-    },
-    {
-      "word": "gaming",
-      "count": 13
-    },
-    {
-      "word": "season",
-      "count": 13
-    },
-    {
-      "word": "trump",
-      "count": 13
-    },
-    {
-      "word": "ukraine",
-      "count": 13
-    },
-    {
-      "word": "case",
-      "count": 11
+      "word": "thanksgiving",
+      "count": 18
     },
     {
       "word": "friday",
-      "count": 11
+      "count": 16
     },
     {
-      "word": "game",
-      "count": 11
+      "word": "court",
+      "count": 14
+    },
+    {
+      "word": "season",
+      "count": 14
+    },
+    {
+      "word": "officially",
+      "count": 13
+    },
+    {
+      "word": "back",
+      "count": 12
+    },
+    {
+      "word": "china",
+      "count": 12
+    },
+    {
+      "word": "data",
+      "count": 12
+    },
+    {
+      "word": "duran",
+      "count": 12
     },
     {
       "word": "games",
       "count": 11
     },
     {
-      "word": "killed",
+      "word": "gold",
+      "count": 11
+    },
+    {
+      "word": "netflix",
+      "count": 11
+    },
+    {
+      "word": "space",
       "count": 11
     }
   ],
   "history": [
-    {
-      "last_run": "2026-11-15T09:13:08.391429+00:00",
-      "duration_seconds": 6.48,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 636
-    },
     {
       "last_run": "2026-11-15T16:59:54.067446+00:00",
       "duration_seconds": 11.62,
@@ -734,6 +727,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 650
+    },
+    {
+      "last_run": "2026-11-26T10:45:17.388667+00:00",
+      "duration_seconds": 8.32,
+      "feeds_ok": 33,
+      "feeds_failed": 5,
+      "articles": 646
     }
   ]
 }
