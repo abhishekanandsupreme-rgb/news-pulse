@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "last_run": "2026-11-27T04:08:50.062165+00:00",
-  "duration_seconds": 8.99,
+  "last_run": "2026-11-27T16:31:11.704771+00:00",
+  "duration_seconds": 9.92,
   "config": {
     "config_file": "config/feeds.json",
     "timeout_seconds": 10,
@@ -12,21 +12,21 @@
   },
   "totals": {
     "feeds": 38,
-    "feeds_ok": 33,
-    "feeds_failed": 5,
-    "articles": 646
+    "feeds_ok": 32,
+    "feeds_failed": 6,
+    "articles": 621
   },
   "categories": {
-    "entertainment": 60,
-    "india": 97,
     "movies": 42,
-    "music": 45,
-    "gaming": 54,
-    "world": 132,
-    "business": 49,
-    "sports": 47,
+    "world": 133,
+    "india": 99,
+    "gaming": 53,
+    "entertainment": 60,
+    "science": 50,
+    "music": 41,
+    "sports": 25,
     "tech": 70,
-    "science": 50
+    "business": 48
   },
   "sources": [
     {
@@ -86,7 +86,7 @@
       "category": "world",
       "ok": true,
       "http_status": 200,
-      "articles": 23,
+      "articles": 24,
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "category": "india",
       "ok": true,
       "http_status": 200,
-      "articles": 22,
+      "articles": 24,
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "category": "business",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 23,
       "error": null
     },
     {
@@ -244,10 +244,10 @@
       "name": "Google News (Sports India)",
       "url": "https://news.google.com/rss/headlines/section/topic/SPORTS?hl=en-IN&gl=IN&ceid=IN:en",
       "category": "sports",
-      "ok": true,
-      "http_status": 200,
-      "articles": 22,
-      "error": null
+      "ok": false,
+      "http_status": 429,
+      "articles": 0,
+      "error": "HTTP 429"
     },
     {
       "slug": "ign",
@@ -276,7 +276,7 @@
       "category": "gaming",
       "ok": true,
       "http_status": 200,
-      "articles": 24,
+      "articles": 23,
       "error": null
     },
     {
@@ -306,7 +306,7 @@
       "category": "music",
       "ok": true,
       "http_status": 200,
-      "articles": 25,
+      "articles": 21,
       "error": null
     },
     {
@@ -452,6 +452,16 @@
       "error": "ValueError: response body is empty -- upstream sent no feed (bot mitigation returns a 2xx with zero bytes)"
     },
     {
+      "slug": "google-sports-india",
+      "name": "Google News (Sports India)",
+      "url": "https://news.google.com/rss/headlines/section/topic/SPORTS?hl=en-IN&gl=IN&ceid=IN:en",
+      "category": "sports",
+      "ok": false,
+      "http_status": 429,
+      "articles": 0,
+      "error": "HTTP 429"
+    },
+    {
       "slug": "indian-express-ent",
       "name": "The Indian Express (Entertainment)",
       "url": "https://indianexpress.com/section/entertainment/feed/",
@@ -464,74 +474,67 @@
   ],
   "trending_keywords": [
     {
-      "word": "india",
-      "count": 28
-    },
-    {
-      "word": "thanksgiving",
-      "count": 23
-    },
-    {
       "word": "black",
-      "count": 19
-    },
-    {
-      "word": "show",
-      "count": 19
+      "count": 36
     },
     {
       "word": "friday",
-      "count": 18
+      "count": 34
     },
     {
-      "word": "trump",
-      "count": 17
+      "word": "india",
+      "count": 25
     },
     {
       "word": "game",
-      "count": 13
-    },
-    {
-      "word": "games",
-      "count": 13
-    },
-    {
-      "word": "killed",
-      "count": 12
-    },
-    {
-      "word": "world",
-      "count": 12
-    },
-    {
-      "word": "million",
-      "count": 11
-    },
-    {
-      "word": "season",
-      "count": 11
-    },
-    {
-      "word": "space",
-      "count": 11
-    },
-    {
-      "word": "years",
-      "count": 11
+      "count": 20
     },
     {
       "word": "back",
+      "count": 16
+    },
+    {
+      "word": "officially",
+      "count": 15
+    },
+    {
+      "word": "deals",
+      "count": 12
+    },
+    {
+      "word": "trump",
+      "count": 12
+    },
+    {
+      "word": "women",
+      "count": 12
+    },
+    {
+      "word": "games",
+      "count": 11
+    },
+    {
+      "word": "series",
+      "count": 11
+    },
+    {
+      "word": "election",
+      "count": 10
+    },
+    {
+      "word": "show",
+      "count": 10
+    },
+    {
+      "word": "thanksgiving",
+      "count": 10
+    },
+    {
+      "word": "year",
       "count": 10
     }
   ],
   "history": [
-    {
-      "last_run": "2026-11-16T06:13:01.759754+00:00",
-      "duration_seconds": 5.76,
-      "feeds_ok": 33,
-      "feeds_failed": 5,
-      "articles": 634
-    },
     {
       "last_run": "2026-11-16T18:22:26.682965+00:00",
       "duration_seconds": 12.48,
@@ -734,6 +737,13 @@
       "feeds_ok": 33,
       "feeds_failed": 5,
       "articles": 646
+    },
+    {
+      "last_run": "2026-11-27T16:31:11.704771+00:00",
+      "duration_seconds": 9.92,
+      "feeds_ok": 32,
+      "feeds_failed": 6,
+      "articles": 621
     }
   ]
 }
